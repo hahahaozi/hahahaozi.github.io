@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>玻光Sky</title>
+  
+  <subtitle>鲸落海底，哺育暗界众生15年</subtitle>
+  <link href="http://hahahaozi.github.io/atom.xml" rel="self"/>
+  
+  <link href="http://hahahaozi.github.io/"/>
+  <updated>2021-02-16T12:39:16.835Z</updated>
+  <id>http://hahahaozi.github.io/</id>
+  
+  <author>
+    <name>hahahaozi</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo从入门到炸机</title>
+    <link href="http://hahahaozi.github.io/posts/f5f6960b/"/>
+    <id>http://hahahaozi.github.io/posts/f5f6960b/</id>
+    <published>2020-08-09T08:20:01.000Z</published>
+    <updated>2021-02-16T12:39:16.835Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;引言&quot;&gt;&lt;a href=&quot;#引言&quot; class=&quot;headerlink&quot; title=&quot;引言&quot;&gt;&lt;/a&gt;引言&lt;/h1&gt;&lt;p&gt;  自从换完电脑重新开启网站后，发现好多在原来的 &lt;del&gt;教程贴&lt;/del&gt;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="教程" scheme="http://hahahaozi.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="hexo" scheme="http://hahahaozi.github.io/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>To the moon</title>
+    <link href="http://hahahaozi.github.io/posts/e7f4e2c6/"/>
+    <id>http://hahahaozi.github.io/posts/e7f4e2c6/</id>
+    <published>2020-03-20T14:41:42.000Z</published>
+    <updated>2021-02-16T12:39:50.977Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在微博上看到的月亮。&lt;br&gt;原作者：Speed的围脖&lt;a href=&quot;https://weibo.com/u/1649586835&quot;&gt;微博链接&lt;/a&gt;&lt;br&gt;已获得原博主授权。&lt;/p&gt;
+&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="杂记" scheme="http://hahahaozi.github.io/tags/%E6%9D%82%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何用win10开启和小伙伴们的链接门——Minecraft开服教程</title>
+    <link href="http://hahahaozi.github.io/posts/d8b9f220/"/>
+    <id>http://hahahaozi.github.io/posts/d8b9f220/</id>
+    <published>2020-03-10T09:57:01.000Z</published>
+    <updated>2021-02-16T12:40:08.442Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;序&quot;&gt;&lt;a href=&quot;#序&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Minecraft" scheme="http://hahahaozi.github.io/categories/Minecraft/"/>
+    
+    
+    <category term="教程" scheme="http://hahahaozi.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="Minecraft" scheme="http://hahahaozi.github.io/tags/Minecraft/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>终于开通了</title>
+    <link href="http://hahahaozi.github.io/posts/4c40f6bb/"/>
+    <id>http://hahahaozi.github.io/posts/4c40f6bb/</id>
+    <published>2020-03-05T04:41:52.000Z</published>
+    <updated>2021-02-16T12:44:35.898Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;搞了一下午再加一上午，放弃了一些实在搞不懂的设置，终于开了这个网站……好吧准确来说也不叫网站。毕竟也没个服务器啥的可搞。但还是搞得焦头烂额，一点都不必mc的服务器省心。&lt;/p&gt;
+&lt;h2 id=&quot;下面来交代一下我的制作过程&quot;&gt;&lt;a href=&quot;#下面来交代一下我的制作过程&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="教程" scheme="http://hahahaozi.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
+  
+</feed>

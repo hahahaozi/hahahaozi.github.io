@@ -1,0 +1,1128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>如何用win10开启和小伙伴们的链接门——Minecraft开服教程</title>
+    <url>/posts/d8b9f220/</url>
+    <content><![CDATA[<h2 id="序"><a href="#序" class="headerlink" title="序"></a>序</h2><p>从入手开始，就想着从前的激情生活……哦哦不是，是和谐生活。在某易还没代理我的世界前……没错！就是我的世界！一切都那么美好……和小伙伴们开着挂玩mc……（忘了那个软件叫什么了……青绿色的底，中间有一个镐子⛏）</p>
+<p>自从一次体会到买服开服的乐趣之后，便开始了一发不可收拾的买服旅程。从国内的买到国外的。同时还体验了一把“搞基”的乐趣所在。[话说搞完机后更想搞了怎么办？]</p>
+<p>从Windows开到Linux，官方提供的安装包都使用过。后来因为各种更新换代原因，最终抛弃了服务器。（其实是没时间玩了）</p>
+<p>直到这回！该死的吃野味的人把病毒带到了人间。受益停课（呜呜呜呜妈妈我考不上大学了）。我的计划又可以开始了！</p>
+<p>制作时间也就20分钟吧……也不是很长。只是中间端口映射麻烦事。跟着教程走其实还是挺简单的。</p>
+<p>下面，来看一下作死过程……</p>
+<p>哦对，本教程是针对手机客户端的，既通过Google下载的Mineccraft。网易版请直接购买网易服务器。</p>
+<p><strong>本教程无图</strong><br>（懒得截图，上传到图床，再把链接转过来了）</p>
+<h2 id="一：关于服务端的下载"><a href="#一：关于服务端的下载" class="headerlink" title="一：关于服务端的下载"></a>一：关于服务端的下载</h2><p>刚打开mc官网的界面，发现。他，<strong>改版了！</strong>。你懂的我的感受么！逛了10分钟没找到自建服务器的安装包。<a href="https://www.minecraft.net/zh-hans/">官方网站|Minecraft</a><br>最后发现support里变成了我看不懂的样子……于是害死猫的耗子心心动了……</p>
+<blockquote>
+<p>大脑：点进去</p>
+<p>手：哦，点进去</p>
+<p>手：喂等等我为什么要点进去！</p>
+<p>大脑：哪那么多废话，叫你点你就点</p>
+</blockquote>
+<p><a href="https://help.minecraft.net/hc/en-us">帮助中心</a></p>
+<p>嗯就是这个网页……什么？看不懂？没事！我也看不懂……大不了你就全点一遍呗……</p>
+<p>当然！如此聪明的耗子是直接网页翻译的……欸别打我！我错了！</p>
+<p>咳咳……往下划到最低下，找到[PLAYING MINECRAFT],下面第三个标题[Dedicated servers for Minecraft on Bedrock]</p>
+<p>点进去会发现这是一篇Q&amp;A，找到[Q: How do I download the dedicated Bedrock server software?]这个标题。找到第一段最后一行的”here”，你会发现这是一个超链接，点进去。</p>
+<h2 id="二：服务器下载链接"><a href="#二：服务器下载链接" class="headerlink" title="二：服务器下载链接"></a>二：服务器下载链接</h2><blockquote>
+<p>传送门：<a href="https://www.minecraft.net/en-us/download/server/bedrock">服务端下载地址</a><br>更新日期：2020/3/12 13:53:17 </p>
+</blockquote>
+<p>根据版本不同可能链接会发生变动。上面已经告诉了你如何找到服务端，不要再找我了哦~</p>
+<p>下面你可以看到Windows和Linux两种系统的下载方式。</p>
+<h2 id="三：系统要求"><a href="#三：系统要求" class="headerlink" title="三：系统要求"></a>三：系统要求</h2><ul>
+<li>Windows系统要求：由于需要支持环境，而那个.dll文件只在win10中存在。所以版本就是win10或win server2016+ 亲测2012版本不可以。</li>
+<li>Linux系统要求：由于需要支持环境，而手残耗子只在Ubuntu19.04 64bit 版本成功开启过，其下行版本Ubuntu 12.04（64bit）、Ubuntu 16.04（64bit）均无法正常开启。如果是我技术太渣的话各位大佬请忽略此系统要求。</li>
+</ul>
+<p>想起来当时还为了这个文件找遍全网，最后在微软的一篇补丁公告中，几百个.dll找到了这个文件，一看相关信息……</p>
+<p><strong>Shit！</strong></p>
+<hr>
+<p>下面勾选复选框，点击下载。Windows直接下载大家都会……不会自行搜索。Linux使用命令<code>wget</code>用来下载。</p>
+<p>emmmm手头没有Linux系统所以今天用Windows来讲。以后有了Linux可搞再上传吧。</p>
+<p>解压好后打开文件夹，你可以看到一堆文件。下面用记事本打开<code>server.properties</code>文件，以此来设置我们服务器的一些基本设置。</p>
+<h2 id="四：服务器配置文件（server-properties）"><a href="#四：服务器配置文件（server-properties）" class="headerlink" title="四：服务器配置文件（server.properties）"></a>四：服务器配置文件（server.properties）</h2><p>(代码模式怎么也搞不好了……就不放代码框了)</p>
+<p><code>server-name=</code>这个是你服务器的名字，填上你喜欢的就可以了</p>
+<p><code>gamemode=</code>这个是游戏默认模式，分为冒险、生存和创造</p>
+<p><code>difficulty=</code>游戏难度</p>
+<p><code>allow-cheats=</code>是否允许玩家作弊</p>
+<p><code>max-players=</code>服务器最多允许进入人数，可以限制人员</p>
+<p><code>online-mode=</code>是否开启正版验证。其实这个现在有点鸡肋了。如果你下的盗版链接不上xbox账户根本连不了机。而能联机的肯定是正版账户。</p>
+<p><code>white-list=</code>是否启用白名单。如果启用，则需要同步设置此目录下的<code>whitelist.json</code>文件。同样使用记事本打开。</p>
+<p><code>server-port=</code>ipv4端口。一般不用更改，但要记住这个端口，我们后面要用到。</p>
+<p><code>server-portv6=</code>ipv6端口。现在……好多家庭用户还没有ipv6地址，同样不用更改。</p>
+<p><code>view-distance=</code>最远刷新距离（区块）</p>
+<p>好了剩下的我也不知道什么意思，我也没动……</p>
+<p>现在你就配置完文件了，这时保存退出，打开<code>bedrock_server.exe</code>文件。当你看到显示</p>
+<blockquote>
+<p>Server started.</p>
+</blockquote>
+<p>后，服务器就成功开启了。</p>
+<h2 id="五：主机固定内网设置"><a href="#五：主机固定内网设置" class="headerlink" title="五：主机固定内网设置"></a>五：主机固定内网设置</h2><p>后面我们需要端口穿刺……哦不对是端口映射。需要我们将主机的内网ip固定起来，以便开机就可以链接。</p>
+<p>用浏览器打开<code>192.168.1.1</code>，根据路由器的不同管理界面地址可能不一样，这个查看你的路由器说明书就可以了。登录名和密码一般也贴在路由器底部。</p>
+<p>此处以耗子的路由器讲解，各不同路由器管理界面不一致，大同小异。</p>
+<p>登陆后找到更多设置-网络设置-局域网-静态 IP 地址绑定列表，将你要开服务器的主机绑定一个内网ip，最好先查一遍内网的ip，防止重复。</p>
+<p>要记好固定的ip，接下来要用。</p>
+<h2 id="六：关于内网穿透"><a href="#六：关于内网穿透" class="headerlink" title="六：关于内网穿透"></a>六：关于内网穿透</h2><p>由于我内网穿透没有成功，或者说不会搞。所以我是直接买的服务。</p>
+<p><a href="https://cloud.zhexi.tech/">哲西云</a> 优惠码：<code>JF9JYY</code></p>
+<p>注册登录后会有一个免费的1天适用，你可以先试一试能不能穿透再购买。</p>
+<p>下面来讲如何设置。</p>
+<p>进入续断端口映射，选择客户端列表，安装客户端。</p>
+<p>安装好后你会在列表中看到你的计算机。</p>
+<p>选择端口映射-新建隧道。</p>
+<p>隧道名称随意。<br>客户端选择你刚刚的安装客户端的计算机。<br>映射类型选择UDP，因为mc的端口是用的UDP。<br>内网主机输入你刚刚固定的内网ip。<br>内网端口输入默认的19132，如果你在配置文件里更改了端口，在此处应填入更改后的端口。<br>外网端口无法选择。<br>高级选项中基础协议选择QUIC.</p>
+<p>点击创建。这是你会看到你新配置的线路已经成功运行了。</p>
+<p>在“内网主机与外网访问”这一栏你可以看到你的外网端口，应该是一串英文数字的混合。将冒号前的填入游戏中ip地址，将后面的填入端口号。就可以愉快的游戏了。</p>
+<p>点击后面的诊断，可以看到ipv4，如果嫌上面的麻烦可以将系统默认域名一栏中中间的数字地址填入ip地址中。</p>
+<h2 id="七：总结"><a href="#七：总结" class="headerlink" title="七：总结"></a>七：总结</h2><p>如果进入后发现是个红点不要担心，直接连接就好。虽然我也不知道它为什么检测不出来但他确实是可以连上的。</p>
+<p>好了就是这样！可以和小伙伴愉快的联机咯！</p>
+]]></content>
+      <categories>
+        <category>Minecraft</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
+        <tag>Minecraft</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>To the moon</title>
+    <url>/posts/e7f4e2c6/</url>
+    <content><![CDATA[<p>在微博上看到的月亮。<br>原作者：Speed的围脖<a href="https://weibo.com/u/1649586835">微博链接</a><br>已获得原博主授权。</p>
+<p><a href="https://m.weibo.cn/1649586835/4481403653399645">原帖地址</a></p>
+<p>因为某些原因，无法上传原图。推荐进入原微博下载原图进入图库查看。小米手机双击放大后会自动识别并提示再次双击进入超清预览。效果爆炸！</p>
+<p><img src="e7f4e2c6/moon_weibo_Steed.jpg" alt="moon"></p>
+]]></content>
+      <tags>
+        <tag>杂记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>终于开通了</title>
+    <url>/posts/4c40f6bb/</url>
+    <content><![CDATA[<p>搞了一下午再加一上午，放弃了一些实在搞不懂的设置，终于开了这个网站……好吧准确来说也不叫网站。毕竟也没个服务器啥的可搞。但还是搞得焦头烂额，一点都不必mc的服务器省心。</p>
+<h2 id="下面来交代一下我的制作过程"><a href="#下面来交代一下我的制作过程" class="headerlink" title="下面来交代一下我的制作过程"></a>下面来交代一下我的制作过程</h2><h3 id="制作（作死）过程"><a href="#制作（作死）过程" class="headerlink" title="制作（作死）过程"></a>制作（作死）过程</h3><p>起因源于幻灵大佬（@huanling）查看了我的网页<a href="http://hahahaozi.top/">耗子主页</a>后告诉我我的网站挂掉了。</p>
+<blockquote>
+<p>耗子，你主页被ban了</p>
+</blockquote>
+<p>嗯嗯……一直在被ban，从未出现。</p>
+<blockquote>
+<p>我的是GitHubPages静态站点，用阿里云认证解析了一下就OK了</p>
+</blockquote>
+<p>！居然还有如此简便快捷可以挂网站的方法！搞起！</p>
+<blockquote>
+<p>额……所以hexo是什么……？？？</p>
+</blockquote>
+<p>看看我蒙蔽的小眼神……开始百度！啊不对……谷歌！</p>
+<p>嗯嗯找到了搜到的教程，开始看着走……然后</p>
+<hr>
+<h2 id="坑来了"><a href="#坑来了" class="headerlink" title="坑来了"></a><strong>坑来了</strong></h2><p>看了开头的安装git，以为只是一个个人习惯问题，不装用cmd也可以。进行到第二步就证明我错了……由于我没有安装git，所以我下不下来安装文件……于是又灰溜溜的回去下载压缩文件。</p>
+<p><code>hexo server</code><br>启动！</p>
+<p><code>http://localhost:4000/</code></p>
+<p>成功！</p>
+<p><code>hexo deploy</code></p>
+<p><code>http://hahahaozi.github.io</code></p>
+<p>ok啦！</p>
+<p>下面开始干什么！哦！绑定域名！</p>
+<hr>
+<h1 id="大坑警告"><a href="#大坑警告" class="headerlink" title="大坑警告"></a>大坑警告</h1><hr>
+<p>打开阿里云！设置DNS！链接！</p>
+<h1 id="叮！"><a href="#叮！" class="headerlink" title="叮！"></a>叮！</h1><p>打开浏览器，输入域名！</p>
+<p><code>http://hahahaozi.top</code></p>
+<blockquote>
+<p>TestPage184</p>
+</blockquote>
+<p>您的网页xxxxxx……</p>
+<p>好吧看来阿里云拦住了我……</p>
+<p>那我把DNS删了吧。</p>
+<p><code>delete</code></p>
+<p><code>http://hahahaozi.github.io</code></p>
+<blockquote>
+<p>跳转中。。。</p>
+</blockquote>
+<p><code>http://hahahaozi.top</code></p>
+<blockquote>
+<p>TestPage184</p>
+</blockquote>
+<p>我的天哪！怎么固定不动了！</p>
+<p>试了各种方法，都不能解除跳转。</p>
+<p><strong>都</strong><br>  <strong>不</strong><br>    <strong>行</strong></p>
+<hr>
+<h3 id="Three-hours-later"><a href="#Three-hours-later" class="headerlink" title="Three hours later"></a>Three hours later</h3><hr>
+<p>好吧我已经放弃了……关了吧……欸我再试试……</p>
+<blockquote>
+<p>关闭浏览器</p>
+</blockquote>
+<blockquote>
+<p>大脑一抽</p>
+</blockquote>
+<blockquote>
+<p>打开浏览器</p>
+</blockquote>
+<blockquote>
+<p>输入网址</p>
+</blockquote>
+<h2 id="Enter！"><a href="#Enter！" class="headerlink" title="Enter！"></a>Enter！</h2><p>当当当！打开了！</p>
+<p>我去！浏览器你好玩么！让我白折腾三个小时！</p>
+<p>呼终于可以直接打开了。</p>
+<p>嗯？你以为这就结束了？本耗子表示<br><strong>这只是个开始</strong></p>
+<hr>
+<p>emmm可以改主题……发费的耗子怎么能放弃呢？看看这个主题，多么可爱<del>看看这个背景，我多么喜欢</del>啊~就是你了皮卡丘！……啊不对<a href="https://github.com/Shen-Yu/hexo-theme-ayer">ayer</a>!</p>
+<blockquote>
+<p>下载ing&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</p>
+</blockquote>
+<p>emmmm挪到<code>themes</code>文件夹里,照着官方教程乱改一气……<br>打开<code>_config.yml</code>,设置主题为<code>ayer</code></p>
+<p><code>hexo generate</code>!</p>
+<p>欸怎么这么多错误？算了试试直接运行。</p>
+<p><code>hexo server</code></p>
+<p>完了，根本运行不了啊……看看上面有多少错误……</p>
+<blockquote>
+<p>10分钟后</p>
+</blockquote>
+<p>啊完全修不过来啊……删了重新下载吧……</p>
+<p><code>delete</code></p>
+<p>欸……我怎么<code>hexo</code>也没有用了？</p>
+<blockquote>
+<p>自我检查ing&gt;&gt;&gt;&gt;&gt;&gt;&gt;</p>
+</blockquote>
+<p>哦……我好像吧初始文件删了……算了算了再来一遍吧……（此处重复千千遍）</p>
+<p>更改主题，上传……emmm可以显示，那就挨个设置吧……</p>
+<hr>
+<p>好了找到问题了，可能是瞎安装的插件结果插件没能顺利运行的原因……<br>那下面继续来作死吧！o(<em>￣▽￣</em>)ブ</p>
+<hr>
+<h1 id="Part-n"><a href="#Part-n" class="headerlink" title="Part n"></a>Part n</h1><hr>
+<h2 id="网易云音乐"><a href="#网易云音乐" class="headerlink" title="网易云音乐"></a>网易云音乐</h2><p>emmm在设置的过程中发现可以播放歌曲，那就走起！<br>设置尺寸……开启自动播放……输入歌单ID……嗯？怎么不显示？<br>那换个歌单试试。<br>emmmmm还不行……</p>
+<p>百度一下……改个代码？找一找……嗯嗯复制粘贴……<br>咦！可以播放歌单了！换一首歌！</p>
+<p>可换了一首歌为什么就不行了？<br>再换一首？还是不行……</p>
+<p>这时，我忽然想起了一个重要的问题</p>
+<h2 id="版权！！！"><a href="#版权！！！" class="headerlink" title="版权！！！"></a>版权！！！</h2><p>会不会是没有版权呢？</p>
+<p>事实证明，是的，我的歌单中大部分是不允许生成外链的……</p>
+<p>那么！算了还是找一首有版权的歌曲吧……</p>
+<p>好了！音乐可以正常播放了，那我们是不是要搞一个评论系统呢？要得！安排！</p>
+<hr>
+<h2 id="gitalk"><a href="#gitalk" class="headerlink" title="gitalk"></a>gitalk</h2><p>emmm就用<a href="http://github.com/gitalk/gitalk">gitalk</a>吧!</p>
+<p>首先，按照教程安装gitalk，去申请一个密钥……粘贴进去……F5！当当当出来了！</p>
+<p>但为什么显示未连接？难道是因为没有上传的原因？</p>
+<p><code>hexo deploy</code></p>
+<p>还是不行？那只好再去百度了。</p>
+<p>跟着教程溜了溜，再次上传，显示：坏的凭证</p>
+<p>（耗式蒙蔽）？？？？？</p>
+<p>(╯‵□′)╯︵┻━┻lz不搞了！</p>
+<p>好了就是这样……</p>
+<hr>
+<p>另附三篇教程链接：<br><a href="https://www.cnblogs.com/visugar/p/6821777.html">hexo从零开始到搭建完成</a></p>
+<p><a href="https://sspai.com/post/25137">认识与入门Markdown</a></p>
+<p><a href="https://mrcxt.github.io/hexo/%E8%A7%A3%E5%86%B3hexo%E4%B8%8B%E5%88%86%E7%B1%BB%E5%92%8C%E6%A0%87%E7%AD%BE%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA%E7%9A%84%E9%97%AE%E9%A2%98/">完美解决hexo下分类和标签无法显示的问题</a></p>
+<hr>
+<p>鸣谢：@huanling 幻灵哥提供的教程</p>
+]]></content>
+      <tags>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo从入门到炸机</title>
+    <url>/posts/f5f6960b/</url>
+    <content><![CDATA[<h1 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h1><p>  自从换完电脑重新开启网站后，发现好多在原来的 <del>教程贴</del> 心理描写帖里并不能完全的使我回忆起并且重现。所以我开了这篇真·教程贴，一方面可以帮助萌新 <del>重新踩坑</del> ，另一方面可以让我回忆起当时的Error并可以在其他网站/重开网站时进行重现。<br><a href="https://hahahaozi.github.io/posts/4c40f6bb.html">原教程贴</a></p>
+<hr>
+<h1 id="第一章：安装"><a href="#第一章：安装" class="headerlink" title="第一章：安装"></a>第一章：安装</h1><p>  本章节依据此文章操作<a href="https://www.cnblogs.com/visugar/p/6821777.html">hexo从零开始到搭建完整-爱吃面包的兰兰-博客园</a></p>
+<h2 id="前期配置"><a href="#前期配置" class="headerlink" title="前期配置"></a>前期配置</h2><p>首先需要安装<a href="https://gitforwindows.org/">Git</a>和<a href="https://nodejs.org/en/">Node Js</a>(直接点击链接即可进入官网)。安装Node Js时，win7及以下版本请安装LTS（即稳定版），win10可安装Current（即最新版）。win7安装14.7.0Current版本时可能会出现安装错误。</p>
+<hr>
+<h3 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h3><p>安装Git时，一路回车即可。安装成功后，可进入</p>
+<blockquote>
+<p>运行（win+r）-cmd </p>
+</blockquote>
+<p>输入 <code>git version</code><br>若显示</p>
+<pre><code>git version x.x.x xxxxxxxx.x
+</code></pre>
+<p>即为安装成功。如果显示其他，则……我也不知道怎么办……毕竟我是一次安装成功的……</p>
+<hr>
+<h3 id="安装Node-Js"><a href="#安装Node-Js" class="headerlink" title="安装Node Js"></a>安装Node Js</h3><p>安装Node Js时，<strong>不能一路回车！</strong>。在Custom Setup这一步选择Add to PATH。安装好后依据上述方法打开cmd，输入<code>path</code>此时会显示</p>
+<pre><code>path=D:/…… 
+</code></pre>
+<p>(盘符及路径依据你的设置而定，此处只是演示）<br>输入<code>node -v</code><br>会返回当前安装版本的版本号。</p>
+<p>另附：如果path没有显示路径，则需要自己设置。具体如何设置，请自行百度。（但我当时一路回车，看也没看，看到要选择设置的时候已经安装完了。path仍然显示路径）</p>
+<hr>
+<h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><p><strong>此步之后不再使用cmd</strong><br>在你要储存数据的路径下新建一个文件夹，自定义命名。如果你已经新建了一个文件夹，直接跳过就好，毕竟禁止套娃。<br>比如我要在 <code>C:\website data</code> 存储数据，就直接在文件夹内右键，选择 <code>Git Bath Here</code> 直接cd到该文件夹下，就不用再一步步切换盘符cd过来了。<br>然后输入命令<code>npm i -g hexo</code>进行hexo的安装（1分钟左右）。输入<code>npm i hexo-server</code>安装服务命令。后输入<code>hexo -v</code>即可查看hexo版本。<br>输入<code>hexo init</code>进行初始化(时间较长，请耐心等待)，初始化后会出现多个文件夹。初始化成功后会显示</p>
+<pre><code>INFO  Start blogging with Hexo!
+</code></pre>
+<p>这时打开文件夹，会发现好多文件/文件夹。下面列出文件/文件夹用途。</p>
+<blockquote>
+<p>node_modules：所有的配置及插件全部在内，<strong>最重要的的一个文件夹。</strong><br>scaffolds：存放模板<br>source：存放写的文章<br>themes：存放主题<br>_config.yml ：可用记事本打开，网站配置。<strong>重要的配置文件。</strong><br>package.json ：可用记事本打开，网站配置。没有要求不用更改。<br>package-lock.json ：可用记事本打开，网站配置。没有要求不用更改。</p>
+</blockquote>
+<p>下面依次输入</p>
+<pre><code>hexo clean
+会返回 INFO  Deleted public folder.
+hexo generate
+会返回 INFO  28 files generated in 1.29 s 当然 文件数量和时间是改变的。
+</code></pre>
+<p>这是返回你的本地文件夹，会发现多了几个文件夹</p>
+<blockquote>
+<p>public： 这个文件夹是你的网站整合后的样子，clean后会自己消失。<br>db.json ：我也不知道这是啥……应该是缓存文件把。</p>
+</blockquote>
+<p>这些里面的东西不要动。实际动了也没用……</p>
+<hr>
+<h2 id="初步认识"><a href="#初步认识" class="headerlink" title="初步认识"></a>初步认识</h2><h3 id="设置Github库"><a href="#设置Github库" class="headerlink" title="设置Github库"></a>设置Github库</h3><p>新建一个Github账号，有的略过。新建一个repository（理解为建立一个新项目），name的格式为<code>yourname.github.io</code>，其中<code>yourname</code>为你github的名称，必须遵守这个格式，不然会出错。<br>eg：我的github ID是hahahaozi，那我的库名就是<code>hahahaozi.github.io</code>.<br>下面选择Public，创建。</p>
+<hr>
+<h3 id="配置Git"><a href="#配置Git" class="headerlink" title="配置Git"></a>配置Git</h3><p>回到bash，输入</p>
+<pre><code>git config --global user.name &quot;yourname&quot;
+git config --global user.email &quot;youremail&quot;
+</code></pre>
+<p>其中<code>yourname</code>和<code>youremail</code>改成你自己的名字和邮箱。后输入</p>
+<pre><code>ssh-keygen -t rsa -C &quot;youremail@example.com
+</code></pre>
+<p>用来创建ssh。这当中的<code>youremail@example.com</code>改成你的邮箱。<br>cd到ssh</p>
+<pre><code>cd ~/.ssh
+cat id_rsa.pub
+</code></pre>
+<p>这时屏幕上会显示出以<code>ssh-rsa</code>开头的一串混合字符串，将输出结果全部复制下来。</p>
+<p><strong>注</strong>：cd完后要返回根文件夹哦，不然后续操作你看到的就是一堆报错信息。</p>
+<hr>
+<h3 id="配置Github"><a href="#配置Github" class="headerlink" title="配置Github"></a>配置Github</h3><p>打开个人中心-setting-SSH and GPG key。在ssh中添加刚刚创建的ssh。<br>返回bash，检查是否成功</p>
+<pre><code>ssh -T git@github.com
+</code></pre>
+<hr>
+<h3 id="初识"><a href="#初识" class="headerlink" title="初识"></a>初识</h3><pre><code>hexo server
+会返回 INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop. 
+</code></pre>
+<p>此时打开任意浏览器，输入<code>http://localhost:4000</code>即可看到原始模板。按<code>Ctrl+C</code>即可关闭服务器。在Git中，<code>Ctrl+C</code>具有强行终止的效果。</p>
+<hr>
+<h3 id="上传至Github"><a href="#上传至Github" class="headerlink" title="上传至Github"></a>上传至Github</h3><p>打开_config.yml文件，滑到最下面找到<code># Deployment</code>，将下方的</p>
+<pre><code>deploy:
+type:
+</code></pre>
+<p>替换为</p>
+<pre><code>deploy:
+type: git
+repo: https://github.com/YourgithubName/YourgithubName.github.io.git
+branch: master
+</code></pre>
+<p>其中repo内，<code>YourgithubName</code>改为你Github的名字。保存，关闭。</p>
+<p>打开bash，安装上传的插件。</p>
+<pre><code>npm install hexo-deployer-git --save
+</code></pre>
+<p>安装好后进行上传</p>
+<pre><code>hexo clean
+hexo generate
+hexo deploy
+</code></pre>
+<p>中途会跳出Github的登录框，按要求登陆即可。这是打开<code>http://yourgithubname.github.io</code>就可以看到你的网站了！</p>
+<hr>
+<h2 id="网站配置文件"><a href="#网站配置文件" class="headerlink" title="网站配置文件"></a>网站配置文件</h2><p>下面来讲解以下网站配置文件<code>_config.yml</code>内的设置及用处。</p>
+<pre><code># Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+ title: Hexo
+ subtitle: &#39;&#39;
+ description: &#39;&#39;
+ keywords:
+ author: John Doe
+ language: zh-CN
+ timezone: &#39;&#39;
+
+# URL
+## If your site is put in a subdirectory, set url as &#39;http://yoursite.com/child&#39; and root as &#39;/child/&#39;
+ url: http://yoursite.com
+ root: /
+ permalink: :year/:month/:day/:title/
+ permalink_defaults:
+ pretty_urls:
+ trailing_index: true # Set to false to remove trailing &#39;index.html&#39; from permalinks
+ trailing_html: true # Set to false to remove trailing &#39;.html&#39; from permalinks
+
+# Directory
+ source_dir: source
+ public_dir: public
+ tag_dir: tags
+ archive_dir: archives
+ category_dir: categories
+ code_dir: downloads/code
+ i18n_dir: :lang
+ skip_render:
+
+# Writing
+ new_post_name: :title.md # File name of new posts
+ default_layout: post
+ titlecase: false # Transform title into titlecase
+ external_link:
+   enable: true # Open external links in new tab
+   field: site # Apply to the whole site
+   exclude: &#39;&#39;
+ filename_case: 0
+ render_drafts: false
+ post_asset_folder: false
+ relative_link: false
+ future: true
+ highlight:
+   enable: true
+   line_number: true
+   auto_detect: false
+   tab_replace: &#39;&#39;
+   wrap: true
+   hljs: false
+prismjs:
+   enable: false
+   preprocess: true
+   line_number: true
+   tab_replace: &#39;&#39;
+
+# Home page setting
+# path: Root path for your blogs index page. (default = &#39;&#39;)
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+ path: &#39;&#39;
+ per_page: 10
+ order_by: -date
+
+# Category &amp; Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Metadata elements
+## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+meta_generator: true
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+## updated_option supports &#39;mtime&#39;, &#39;date&#39;, &#39;empty&#39;
+updated_option: &#39;mtime&#39;
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
+
+# Include / Exclude file(s)
+## include:/exclude: options only apply to the &#39;source/&#39; folder
+include:
+exclude:
+ignore:
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: alpha-dust
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: &#39;&#39;
+</code></pre>
+<p>以上就是配置文件的内容，下面解释一下需要个性化设置的。</p>
+<pre><code># Site
+ title: Hexo
+ subtitle: &#39;&#39;
+ description: &#39;&#39;
+ keywords:
+ author: John Doe
+ language: zh-CN
+ timezone: &#39;&#39;
+</code></pre>
+<p>这部需要设置的比较多，<code>title</code>填写你网站的名字。<code>another</code>填写你，当然留空也没问题。<code>lauguage</code>填写<code>zh-CN</code>。下面的<code>timezone</code>填写<code>Asia/Shanghai</code>。</p>
+<hr>
+<pre><code># URL
+## If your site is put in a subdirectory, set url as &#39;http://yoursite.com/child&#39; and root as &#39;/child/&#39;
+ url: http://yoursite.com
+</code></pre>
+<p>这部分只要将网址改为你的网站就可以了。</p>
+<hr>
+<pre><code># Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: alpha-dust
+</code></pre>
+<hr>
+<p>这部分将主题改为你的主题名字，名字见<code>themes</code>里的名字。</p>
+<pre><code># Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: &#39;&#39;
+</code></pre>
+<p>这部分要改的比较多。</p>
+<pre><code># Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repo: https://github.com/yourname/yourname.github.io.git
+  branch: master
+</code></pre>
+<p>其中<code>yourname</code>为你Github的名字</p>
+<hr>
+<h1 id="第二章：开始鼓捣"><a href="#第二章：开始鼓捣" class="headerlink" title="第二章：开始鼓捣"></a>第二章：开始鼓捣</h1><p>下面开始，才是噩梦的存在。毕竟上面没啥变化，下面的么……一个主题一个配置。我也就按照自己的主题配置了。我的主题是<a href="https://github.com/Shen-Yu/hexo-theme-ayer">Ayer</a>。你也可以<a href="https://hexo.io/themes/">通过此处</a>来选取你喜欢的主题进行设置。</p>
+<h2 id="安装主题"><a href="#安装主题" class="headerlink" title="安装主题"></a>安装主题</h2><p>这次换个主题，我找到了一个充满未来科技感的主题<a href="http://www.codeblocq.com/assets/projects/hexo-theme-alpha-dust/">Alpha-dust</a>。我这次就用这个主题进行演示（后来发现这个主题比较基础，没有那么多的插件，很简单的一个模板）。首先在bash中输入安装命令来下载主题</p>
+<pre><code>git clone  https://github.com/klugjo/hexo-theme-alpha-dust主题/ alpha-dust
+</code></pre>
+<hr>
+<h2 id="配置主题"><a href="#配置主题" class="headerlink" title="配置主题"></a>配置主题</h2><p>安装好后我们需要去<code>_config.yml</code>文件内将</p>
+<pre><code># Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: landscape
+</code></pre>
+<p>改为</p>
+<pre><code># Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: alpha-dust
+</code></pre>
+<p>关于主题的名称可以去<code>themes</code>文件夹中寻找。在配置文件中# 后的内容仅仅起到注释作用（#后要有一个空格）。<br>根据教程提示，下面步骤的配置文件在<code>\themes\alpha-dust\_config.yml</code>中完成。关于menu的设置我没有看出有什么区别，可能是因为教程是4年前的，而配置文件经过了更新所以不用自己添加。<br>下面是图标的设置，这个主题提供了一个图标的来源，可以选择自己喜欢的图标，也可以自己制作符合图标规定的图标。下面的是关于页脚和版权的设定。需要注意的是在<code>Social Account</code>中，我们可以更改最后两项即<code>email_url: </code>和<code>rss_url: </code>其他的都是标定的网址。另外如果你不想在你的网站上标明可以直接删掉这一段。这是你启动本地预览可以发现你的网站已经切换了模板。</p>
+<hr>
+<h2 id="新文章"><a href="#新文章" class="headerlink" title="新文章"></a>新文章</h2><p>在bash中输入</p>
+<pre><code>hexo new xxx
+</code></pre>
+<p>即可创建新文章，新文章在目录<code>\source\_posts\</code>中，以.md的格式存储的。关于md的软件及语法可以去百度一下，下面是一篇有关md语法的介绍。<br><a href="http://itmyhome.com/markdown/article/syntax/code.html">md语法</a></p>
+<hr>
+<h2 id="创建分类及标签页"><a href="#创建分类及标签页" class="headerlink" title="创建分类及标签页"></a>创建分类及标签页</h2><p>bash中输入命令</p>
+<pre><code>hexo new page categories
+</code></pre>
+<p>即可创建分类页面。打开<code>/source/categories/index.md</code>文件，将以下内容复制进去。</p>
+<pre><code>---
+title: categories
+type: &quot;categories&quot;
+layout: &quot;categories&quot;
+---
+</code></pre>
+<p>这样就创建了分类。</p>
+<hr>
+<pre><code>hexo new page tags
+</code></pre>
+<p>即可创建标签页页面，打开<code>/source/tags/index.md</code>文件，将以下内容复制进去。</p>
+<pre><code>---
+title: tags
+type: &quot;tags&quot;
+layout: &quot;tags&quot;
+---
+</code></pre>
+<p>这样就创建了标签页。</p>
+<hr>
+<p>好了，到这里所有的基础就完成了。</p>
+<hr>
+<h1 id="第三章：插件"><a href="#第三章：插件" class="headerlink" title="第三章：插件"></a>第三章：插件</h1><p><a href="https://hexo.io/plugins/">hexo插件市场</a></p>
+<p>这个章节在于介绍各种插件的设置与使用。插件是最繁琐的部分，因为插件之间总有着各种各样的冲突，不仅仅是程序上的冲突，还有大小和重叠的问题。我右下角的看板娘就是当时一点点去改的尺寸。</p>
+<p>还是喜欢我的Ayer主题……那么接下来的插件就先按照Ayer里给的插件进行说明，再加上我自己用的插件。<br><a href="https://shen-yu.gitee.io/2019/ayer/">Ayer中文说明</a></p>
+<p><strong>注意：更改配置文件或安装插件前建议将当前可正常运行的版本进行整体备份，以便恢复时使用。当安装插件启用后导致崩溃的，可将配置文件中相应部分删除或将ture改为false解决（我遇到的的确如此）。如无效，建议直接可正常运行的版本直接覆盖。主要覆盖文件夹为node_modules</strong></p>
+<h2 id="配置主题文件"><a href="#配置主题文件" class="headerlink" title="配置主题文件"></a>配置主题文件</h2><p>要想网站设的好，配置文件少不了。下面我就直接贴出Ayer网站列举的Ayer主题配置文件说明。<a href="https://shen-yu.gitee.io/2019/ayer/#%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE">配置文件说明</a><br>注意，是<strong>主题配置文件</strong>，不是网站配置文件。</p>
+<pre><code># 侧边栏菜单
+menu:
+ 主页: /
+ 归档: /archives
+ 分类: /categories
+ 标签: /tags
+ 旅行: /tags/旅行/
+ 关于我: /about
+
+# 站点次标题和打字动效
+# https://github.com/mattboldt/typed.js
+subtitle:
+ enable: true  # 是否开启动效
+ text: 面朝大海，春暖花开  # 显示的文字
+ text2: 愿你一生努力，一生被爱   # 滚动播放，如果不需要可以留空
+ text3: 想要的都拥有，得不到的都释怀  # 最多支持三段文字
+ startDelay: 0   # 延迟时间
+ typeSpeed: 200  # 打字速度
+ loop: true  # 是否循环
+ backSpeed: 100  # 回退速度
+ showCursor: true  # 是否显示光标
+
+# 网站图标和侧边栏logo
+favicon: /favicon.ico
+logo: /images/ayer-side.svg
+
+# 封面配置
+# enable-是否启用封面；path-封面背景图；logo-封面logo
+cover:
+ enable: true
+ path: /images/cover1.jpg  # /source/images目录下附送多张精美壁纸，可任意更换
+ logo: /images/ayer.svg  # 如果不要直接设置成false
+
+# 页面顶部进度条  
+progressBar: true
+
+# 文章配置
+# 文章太长，截断按钮文字(在需要截断的行增加此标记：&lt;!--more--&gt;)
+excerpt_link: 阅读更多...
+# 如果你嫌每篇文章手动加more标记比较麻烦，又不想在首页全文显示，可以把excerpt_all设置成true，这样首页只会显示文章归档
+excerpt_all: false
+
+# 是否开启代码复制按钮
+copy_btn: true
+# 是否开启文章分享按钮
+share_enable: true
+# 国内的社交平台(If you are not in China, maybe you prefer to set:false)
+share_china: true
+# 文章分享文字
+share_text: 分享
+
+# 分页文字
+nav_text:
+ page_prev: 上一页
+ page_next: 下一页
+ post_prev: 上一篇
+ post_next: 下一篇
+
+# 文章页是否显示目录
+toc: true
+
+# 文章中的图片是否支持点击放大
+image_viewer: true
+
+# https://github.com/willin/hexo-wordcount
+# 是否开启字数统计(关闭请设置enable为false)
+# 也可以单独在md文件里Front-matter设置`no_word_count: true`属性，来自定义关闭字数统计
+word_count:
+ enable: true
+# 只在文章详情显示(不在首页显示)
+ only_article_visit: true
+
+# 打赏
+# 打赏type设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-默认开启所有文章均有打赏，如果有些文章你不需要，请在文章对应的md文件里设置no_reward:true
+reward_type: 2
+# 打赏wording
+reward_wording: &#39;请我喝杯咖啡吧~&#39;
+# 支付宝二维码图片地址，跟你设置logo的方式一样。比如：/images/alipay.jpg
+alipay: /images/alipay.jpg
+# 微信二维码图片地址
+weixin: /images/wechat.jpg
+
+# 版权声明
+# 版权声明type设定：0-关闭版权声明； 1-文章对应的md文件里有copyright: true属性，才有版权声明； 2-所有文章均有版权声明
+copyright_type: 2
+
+# 是否启用搜索
+search: true
+
+# RSS订阅(先安装hexo-generator-feed插件，再去博客根目录config进行配置)
+# 不想显示可以直接留空
+rss: /atom.xml
+
+# 是否启用黑夜模式开关
+darkmode: true
+
+# 动态背景效果: 0-关闭，1-动态线条(跟随鼠标)
+canvas_bg: 0
+
+# 自定义鼠标样式，直接替换/images/mouse.cur文件
+mouse:
+ enable: false
+ path: /images/mouse.cur
+
+# 鼠标点击效果：0-关闭，1-爱心，2-爆炸烟花，3-粒子烟花
+click_effect: 0
+
+# 页面宽度自定义（不建议修改，可能造成布局混乱），article_width文章宽度，sidebar_width侧边栏宽度
+layout:
+ article_width: 80rem
+ sidebar_width: 8rem
+
+# GitHub Ribbons-封面右上角的forkme，换样式直接在source/images目录下替换forkme图片
+github: 
+# (关闭请设置为false)
+ url: https://github.com/Shen-Yu/hexo-theme-ayer
+
+# 网易云音乐插件
+music:
+ enable: false
+ # 播放器尺寸类型(1：小尺寸、2：大尺寸)
+ type: 1
+ id: 22707008  # 网易云分享的音乐ID(更换音乐请更改此配置项)
+ autoPlay: true  # 是否开启自动播放
+
+# 访问量统计(不蒜子)
+busuanzi:
+ enable: true
+
+# 友盟cnzz统计(url填js代码src链接)
+cnzz:
+ enable: true
+ url: #
+
+# Google Analytics
+google_analytics: &#39;&#39;
+# 百度统计
+baidu_analytics: &#39;&#39;
+
+# Mathjax数学公式
+mathjax: true
+
+# Katex数学公式(allpost设置为false时只有头部设置math:true的文章才开启)
+# 需要更换hexo渲染器，npm un hexo-renderer-marked -S &amp;&amp; npm i hexo-renderer-markdown-it-katex -S
+katex:
+ enable: false # true
+ allpost: true
+ copy_tex: false
+
+# 网站成立年份(默认为 2019，若填入年份小于当前年份，则显示为 2018-2019 类似的格式)
+since: 2020
+
+#是否显示页脚信息(建议保留，有助于本主题的推广)
+pageFooter: true
+
+#ICP备案信息尾部显示
+icp:
+enable: false
+url: &#39;http://www.beian.miit.gov.cn/&#39; # 备案链接
+text: &#39;浙ICP备88888888&#39; # 备案信息
+
+# 评论：1、Valine(推荐)；2、Gitalk
+
+# 1、Valine[一款快速、简洁且高效的无后端评论系统](https://github.com/xCss/Valine)
+# 启用Valine必须先创建leancloud应用， 注册账号后获取 id|key 填入即可
+leancloud:  
+ enable: true
+ app_id: #
+ app_key: #
+# Valine配置(如果有些文章你想关闭评论，请在文章对应的md文件里设置no_valine:true)
+valine:
+ enable: true # 是否启用
+ avatar: monsterid # 头像样式(https://valine.js.org/avatar.html)
+ placeholder: 给我的文章加点评论吧~ # placeholder
+
+# 2、Gitalk(https://github.com/gitalk/gitalk)
+gitalk:
+ enable: false # true
+ clientID: # GitHub Application Client ID
+ clientSecret: # Client Secret
+ repo: # Repository name
+ owner: # GitHub ID
+ admin: # GitHub ID
+</code></pre>
+<p>下面说明一下各个配置的设置。</p>
+<h3 id="侧边框菜单"><a href="#侧边框菜单" class="headerlink" title="侧边框菜单"></a>侧边框菜单</h3><pre><code># 侧边栏菜单
+menu:
+ 主页: /
+ 归档: /archives
+ 分类: /categories
+ 标签: /tags
+ 旅行: /tags/旅行/
+ 关于我: /about
+</code></pre>
+<p>这部分是关于你侧边框的设置，你可以任意更改名称，也可以任意增添。只要注意在设置完路径后通过bash创建新分栏即可。</p>
+<hr>
+<h3 id="首页动态效果"><a href="#首页动态效果" class="headerlink" title="首页动态效果"></a>首页动态效果</h3><pre><code># 站点次标题和打字动效
+# https://github.com/mattboldt/typed.js
+subtitle:
+ enable: true  # 是否开启动效
+ text: 面朝大海，春暖花开  # 显示的文字
+ text2: 愿你一生努力，一生被爱   # 滚动播放，如果不需要可以留空
+ text3: 想要的都拥有，得不到的都释怀  # 最多支持三段文字
+ startDelay: 0   # 延迟时间
+ typeSpeed: 200  # 打字速度
+ loop: true  # 是否循环
+ backSpeed: 100  # 回退速度
+ showCursor: true  # 是否显示光标
+</code></pre>
+<p>这部分是关于首页打字效果的设置。实际需要设置的就是三个text后面的汉字部分，如果不启用请将<code>enable: true</code>改为<code>enable: false</code>，对速度不满意也可以调整速度。配置文件中已经说明了各行的意义。</p>
+<hr>
+<h3 id="网站图标"><a href="#网站图标" class="headerlink" title="网站图标"></a>网站图标</h3><pre><code># 网站图标和侧边栏logo
+favicon: /favicon.ico
+logo: /images/ayer-side.svg
+</code></pre>
+<p>这部分是修改网站的图标，跟上面一样，如果有就替换掉。logo的地址：<code>\themes\hexo-theme-ayer\source\images</code> favicon的地址：<code>\themes\hexo-theme-ayer\source\</code>。</p>
+<hr>
+<h3 id="主页图片"><a href="#主页图片" class="headerlink" title="主页图片"></a>主页图片</h3><pre><code># 封面配置
+# enable-是否启用封面；path-封面背景图；logo-封面logo
+cover:
+ enable: true
+ path: /images/cover1.jpg  # /source/images目录下附送多张精美壁纸，可任意更换
+ logo: /images/ayer.svg  # 如果不要直接设置成false
+</code></pre>
+<p>这部分是关于封面的设置，同样你在<code>\themes\hexo-theme-ayer\source\images</code>下可以看到一堆图片，可以随意选择。如果要上传自己的图片也可以设置为相同尺寸和格式后导入该路径进行设置。</p>
+<hr>
+<h3 id="文章进度条"><a href="#文章进度条" class="headerlink" title="文章进度条"></a>文章进度条</h3><pre><code># 页面顶部进度条  
+progressBar: true
+</code></pre>
+<p>这个就是显示阅读进度的小条条，不需要可以改为`false</p>
+<hr>
+<h3 id="文章缩略"><a href="#文章缩略" class="headerlink" title="文章缩略"></a>文章缩略</h3><pre><code># 文章配置
+# 文章太长，截断按钮文字(在需要截断的行增加此标记：&lt;!--more--&gt;)
+excerpt_link: 阅读更多...
+# 如果你嫌每篇文章手动加more标记比较麻烦，又不想在首页全文显示，可以把excerpt_all设置成true，这样首页只会显示文章归档
+excerpt_all: false
+</code></pre>
+<p>如果关闭这项设置，在主页会显示部分内容，通过<code>&lt;!--more--&gt;</code>标记进行断页。如果关闭后文章内没有截断标记，则主页会显示全部内容。开启后主页只会显示标题，像我的主页一样，。</p>
+<hr>
+<h3 id="分享设置"><a href="#分享设置" class="headerlink" title="分享设置"></a>分享设置</h3><pre><code># 是否开启代码复制按钮
+copy_btn: true
+# 是否开启文章分享按钮
+share_enable: true
+# 国内的社交平台(If you are not in China, maybe you prefer to set:false)
+share_china: true
+# 文章分享文字
+share_text: 分享
+</code></pre>
+<p>这部分是关于分享的。<code>分享</code>二字可以自由发挥。</p>
+<hr>
+<h3 id="分页"><a href="#分页" class="headerlink" title="分页"></a>分页</h3><pre><code># 分页文字
+nav_text:
+ page_prev: 上一页
+ page_next: 下一页
+ post_prev: 上一篇
+ post_next: 下一篇
+</code></pre>
+<p>这部分是分页文字。</p>
+<hr>
+<h3 id="显示目录"><a href="#显示目录" class="headerlink" title="显示目录"></a>显示目录</h3><pre><code># 文章页是否显示目录
+toc: true
+</code></pre>
+<p>这个我也没搞懂是啥……可能是侧边框？</p>
+<hr>
+<h3 id="图片放大"><a href="#图片放大" class="headerlink" title="图片放大"></a>图片放大</h3><pre><code># 文章中的图片是否支持点击放大
+image_viewer: true
+</code></pre>
+<p>如果开启，图片可以以独立图层的方式展示出来。</p>
+<hr>
+<h3 id="文章字数统计"><a href="#文章字数统计" class="headerlink" title="文章字数统计"></a>文章字数统计</h3><pre><code># https://github.com/willin/hexo-wordcount
+# 是否开启字数统计(关闭请设置enable为false)
+# 也可以单独在md文件里Front-matter设置`no_word_count: true`属性，来自定义关闭字数统计
+word_count:
+ enable: true
+# 只在文章详情显示(不在首页显示)
+ only_article_visit: true
+</code></pre>
+<p>此部分是关于统计信息的设置，不用可以设置为<code>false</code>。另外，字数统计真的是字数统计，英文是不算的……本文2.5w字，这个才统计了8.3k……</p>
+<hr>
+<h3 id="打赏设置"><a href="#打赏设置" class="headerlink" title="打赏设置"></a>打赏设置</h3><pre><code># 打赏
+# 打赏type设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-默认开启所有文章均有打赏，如果有些文章你不需要，请在文章对应的md文件里设置no_reward:true
+reward_type: 2
+# 打赏wording
+reward_wording: &#39;请我喝杯咖啡吧~&#39;
+# 支付宝二维码图片地址，跟你设置logo的方式一样。比如：/images/alipay.jpg
+alipay: /images/alipay.jpg
+# 微信二维码图片地址
+weixin: /images/wechat.jpg
+</code></pre>
+<p>如果你要开启二维码打赏功能，记得<strong>更改路径下的二维码照片</strong>，不然小钱钱可到不了你的手里哦~</p>
+<hr>
+<h3 id="文章版权声明"><a href="#文章版权声明" class="headerlink" title="文章版权声明"></a>文章版权声明</h3><pre><code># 版权声明
+# 版权声明type设定：0-关闭版权声明； 1-文章对应的md文件里有copyright: true属性，才有版权声明； 2-所有文章均有版权声明
+copyright_type: 2
+</code></pre>
+<p>版权声明。</p>
+<hr>
+<h3 id="搜索设置"><a href="#搜索设置" class="headerlink" title="搜索设置"></a>搜索设置</h3><pre><code># 是否启用搜索
+search: true
+</code></pre>
+<p>启用搜索时需要安装搜索插件，不需要时请<code>false</code>。</p>
+<hr>
+<h3 id="RSS订阅设置"><a href="#RSS订阅设置" class="headerlink" title="RSS订阅设置"></a>RSS订阅设置</h3><pre><code># RSS订阅(先安装hexo-generator-feed插件，再去博客根目录config进行配置)
+# 不想显示可以直接留空
+rss: /atom.xml
+</code></pre>
+<p>同样，需要插件支持。</p>
+<hr>
+<h3 id="黑夜模式"><a href="#黑夜模式" class="headerlink" title="黑夜模式"></a>黑夜模式</h3><pre><code># 是否启用黑夜模式开关
+darkmode: true
+</code></pre>
+<p>如果不启用直接<code>false</code>即可。</p>
+<hr>
+<h3 id="页面动态效果"><a href="#页面动态效果" class="headerlink" title="页面动态效果"></a>页面动态效果</h3><pre><code># 动态背景效果: 0-关闭，1-动态线条(跟随鼠标)
+canvas_bg: 0
+</code></pre>
+<p>即可以跟随鼠标晃动的线条……装饰效果。如果追求速度建议关闭，毕竟是个真·小破站。<br>刚刚开启试了试，在静态是会颤抖，看着特别难受。不建议开启。</p>
+<hr>
+<h3 id="鼠标样式"><a href="#鼠标样式" class="headerlink" title="鼠标样式"></a>鼠标样式</h3><pre><code># 自定义鼠标样式，直接替换/images/mouse.cur文件
+mouse:
+ enable: false
+ path: /images/mouse.cur
+</code></pre>
+<p>可以这是箭头的样式，你可以选择游戏内的，或者是各种奇奇怪怪的样子。</p>
+<hr>
+<h3 id="点击特效"><a href="#点击特效" class="headerlink" title="点击特效"></a>点击特效</h3><pre><code># 鼠标点击效果：0-关闭，1-爱心，2-爆炸烟花，3-粒子烟花
+click_effect: 0
+</code></pre>
+<p>鼠标点击后出现的特效。同样，追求速度的话不建议开启。</p>
+<hr>
+<h3 id="页面尺寸设置"><a href="#页面尺寸设置" class="headerlink" title="页面尺寸设置"></a>页面尺寸设置</h3><pre><code># 页面宽度自定义（不建议修改，可能造成布局混乱），article_width文章宽度，sidebar_width侧边栏宽度
+layout:
+ article_width: 80rem
+ sidebar_width: 8rem
+</code></pre>
+<p>这个设置没动过……乖乖听话。（乖巧.jpg）</p>
+<hr>
+<h3 id="首页绶带设置"><a href="#首页绶带设置" class="headerlink" title="首页绶带设置"></a>首页绶带设置</h3><pre><code># GitHub Ribbons-封面右上角的forkme，换样式直接在source/images目录下替换forkme图片
+github: 
+# (关闭请设置为false)
+ url: https://github.com/Shen-Yu/hexo-theme-ayer
+</code></pre>
+<p>右上角的绶带图片（应该是，我没有更新。）</p>
+<hr>
+<h3 id="音乐插件设置（网易云）"><a href="#音乐插件设置（网易云）" class="headerlink" title="音乐插件设置（网易云）"></a>音乐插件设置（网易云）</h3><pre><code># 网易云音乐插件
+music:
+ enable: false
+ # 播放器尺寸类型(1：小尺寸、2：大尺寸)
+ type: 1
+ id: 22707008  # 网易云分享的音乐ID(更换音乐请更改此配置项)
+ autoPlay: true  # 是否开启自动播放
+</code></pre>
+<p>这是个神坑啊！网易云音乐插件！注意不能存放歌单ID，不能播放<strong>有版权限制</strong>的音乐。具体怎样查看音乐是否有版权？去网易云网页版找到你想播放的音乐，进入歌曲详细页，点击光碟下方<code>生成外链播放器</code>，如果不能生成则说明此歌曲不能播放。选择<code>iframe插件</code>，下方HTML代码框会自动生成代码。</p>
+<pre><code>&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=330 height=86 src=&quot;//music.163.com/outchain/player?type=2&amp;id=1376873330&amp;auto=1&amp;height=66&quot;&gt;&lt;/iframe&gt;
+</code></pre>
+<p>我们只需要</p>
+<pre><code>type=2&amp;id=1376873330
+</code></pre>
+<p>这一串，将<code>type=</code>后的纯数字填入配置文件中，将<code>id=</code>后的纯数字填入<code>id</code>后，这样就可以了。自动播放则是指打开网页是否自动播放。</p>
+<h4 id="个人解决方法"><a href="#个人解决方法" class="headerlink" title="个人解决方法"></a>个人解决方法</h4><p>我的Ayer版本还存在着分离的情况，在配置文件中只有是否启用网易云音乐，剩下的配置则是在<code>themes\hexo-theme-ayer\layout\_partial\music.ejs</code>文件中。以下是我的文件配置。</p>
+<pre><code>&lt;div id=&quot;music&quot;&gt;
+&lt;%# &quot;bottom:120px; left:auto;position:fixed;  width:85%&quot; %&gt;
+&lt;% var defaultHeight = theme.music.type == 1 ? &#39;32&#39; : &#39;66&#39;; %&gt;
+&lt;% var defaultIframeHeight = theme.music.type == 1 ? &#39;52&#39; : &#39;86&#39;; %&gt;
+&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=330 height=86 src=&quot;//music.163.com/outchain/player?type=2&amp;id=1376873330&amp;auto=0&amp;height=66&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+#music &#123;
+    position: fixed;
+    right: 15px;
+    bottom: 0;
+    z-index: 998;
+&#125;
+&lt;/style&gt;
+</code></pre>
+<hr>
+<h3 id="统计设置"><a href="#统计设置" class="headerlink" title="统计设置"></a>统计设置</h3><pre><code># 访问量统计(不蒜子)
+busuanzi:
+ enable: true
+</code></pre>
+<p>这部分是页脚的统计信息。</p>
+<pre><code># 友盟cnzz统计(url填js代码src链接)
+cnzz:
+ enable: true
+ url: #
+</code></pre>
+<p>这个好像是需要注册的，我就没有整。和上面的不蒜子都是统计客流量的插件。</p>
+<pre><code># Google Analytics
+google_analytics: &#39;&#39;
+# 百度统计
+baidu_analytics: &#39;&#39;
+</code></pre>
+<p>上面两个一个是谷歌的统计插件，一个是百度的统计插件。介于google的复杂设置就不进行说明，实际很简单。百度的……算了吧……</p>
+<hr>
+<h3 id="数学公式"><a href="#数学公式" class="headerlink" title="数学公式"></a>数学公式</h3><pre><code># Mathjax数学公式
+mathjax: true
+</code></pre>
+<p>该主题支持数学公式，只是我不会用……</p>
+<pre><code># Katex数学公式(allpost设置为false时只有头部设置math:true的文章才开启)
+# 需要更换hexo渲染器，npm un hexo-renderer-marked -S &amp;&amp; npm i hexo-renderer-markdown-it-katex -S
+katex:
+ enable: false # true
+ allpost: true
+ copy_tex: false
+</code></pre>
+<p>跟上方一样，也支持公式，但需要按照说明额外安装插件。</p>
+<hr>
+<h3 id="网站年份"><a href="#网站年份" class="headerlink" title="网站年份"></a>网站年份</h3><pre><code># 网站成立年份(默认为 2019，若填入年份小于当前年份，则显示为 2018-2019 类似的格式)
+since: 2019
+</code></pre>
+<p>没啥说明。</p>
+<hr>
+<h3 id="页脚信息"><a href="#页脚信息" class="headerlink" title="页脚信息"></a>页脚信息</h3><pre><code>#是否显示页脚信息(建议保留，有助于本主题的推广)
+pageFooter: true
+</code></pre>
+<p>具体内容是页脚的<code>Powered by Hexo Theme Ayer</code>这串信息。</p>
+<hr>
+<h3 id="ICP备案信息设置"><a href="#ICP备案信息设置" class="headerlink" title="ICP备案信息设置"></a>ICP备案信息设置</h3><pre><code>#ICP备案信息尾部显示
+icp:
+enable: false
+url: &#39;http://www.beian.miit.gov.cn/&#39; # 备案链接
+text: &#39;浙ICP备88888888&#39; # 备案信息
+</code></pre>
+<p>这个没有就关了吧……别到时候被请喝茶了……</p>
+<hr>
+<h3 id="评论设置"><a href="#评论设置" class="headerlink" title="评论设置"></a>评论设置</h3><pre><code># 评论：1、Valine(推荐)；2、Gitalk
+
+# 1、Valine[一款快速、简洁且高效的无后端评论系统](https://github.com/xCss/Valine)
+# 启用Valine必须先创建leancloud应用， 注册账号后获取 id|key 填入即可
+leancloud:  
+ enable: true
+ app_id: #
+ app_key: #
+# Valine配置(如果有些文章你想关闭评论，请在文章对应的md文件里设置no_valine:true)
+valine:
+ enable: true # 是否启用
+ avatar: monsterid # 头像样式(https://valine.js.org/avatar.html)
+ placeholder: 给我的文章加点评论吧~ # placeholder
+
+# 2、Gitalk(https://github.com/gitalk/gitalk)
+gitalk:
+ enable: false # true
+ clientID: # GitHub Application Client ID
+ clientSecret: # Client Secret
+ repo: # Repository name
+ owner: # GitHub ID
+ admin: # GitHub ID
+</code></pre>
+<p>这个主题提供了两套评论系统，我用的是Gitalk，后面会在选修插件开一节讲如何设置。（这个也是个坑，要不是碰巧碰到一篇文章我都不知道http://和https://有这么大的区别）</p>
+<hr>
+<h3 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h3><p>另外添加一个，如果你希望网站在右侧读取你本篇文章的并自动构建目录的话，在主题配置文件最下方加入以下代码</p>
+<pre><code># Toc
+ toc: true
+</code></pre>
+<p>如果你不希望某篇文章出现目录，则在该篇文章的头里加入</p>
+<pre><code>no_toc: true
+</code></pre>
+<p>即可取消该篇文章的目录。</p>
+<hr>
+<p>配置文件就是这些，下面开始讲各种插件的安装及应用。</p>
+<h2 id="必修插件"><a href="#必修插件" class="headerlink" title="必修插件"></a>必修插件</h2><h3 id="hexo-generator-searchdb（搜索插件）"><a href="#hexo-generator-searchdb（搜索插件）" class="headerlink" title="hexo-generator-searchdb（搜索插件）"></a>hexo-generator-searchdb（搜索插件）</h3><p>此插件是支持整个网站搜索的关键，必备插件。<a href="https://github.com/theme-next/hexo-generator-searchdb">hexo-generator-searchdb网址</a><br>打开bash，输入指令安装。</p>
+<pre><code>npm install hexo-generator-searchdb
+</code></pre>
+<p>在网站配置文件中添加以下内容。注意是<strong>网站配置文件而非主题配置文件</strong>。</p>
+<pre><code># hexo-generator-searchdb
+search:
+ path: search.xml
+ field: post
+ format: html
+</code></pre>
+<p>不需要更改，直接粘贴到文件莫即可。</p>
+<hr>
+<h3 id="hexo-abbrlink（文章唯一永久链接）"><a href="#hexo-abbrlink（文章唯一永久链接）" class="headerlink" title="hexo-abbrlink（文章唯一永久链接）"></a>hexo-abbrlink（文章唯一永久链接）</h3><p>此插件是为应对各种乱窜和过长的网址而准备的。特别是涉及本地图片时，如果按照默认命名规则，网址不仅长，而且链接时会链接不上。拥有这个插件后会解决这个问题。<a href="https://github.com/Rozbo/hexo-abbrlink">hexo-abbrlink网址</a><br>打开bash，输入指令安装。</p>
+<pre><code>npm install hexo-abbrlink --save
+</code></pre>
+<p>将网站配置文件中</p>
+<pre><code># URL
+## If your site is put in a subdirectory, set url as &#39;http://yoursite.com/child&#39; and root as &#39;/child/&#39;
+permalink: 
+</code></pre>
+<p>改为</p>
+<pre><code># URL
+## If your site is put in a subdirectory, set url as &#39;http://yoursite.com/child&#39; and root as &#39;/child/&#39;
+permalink: posts/:abbrlink.html
+</code></pre>
+<p>然后将以下部分贴入网站配置文件中。</p>
+<pre><code># abbrlink config
+abbrlink:
+  alg: crc32      #support crc16(default) and crc32
+  rep: hex        #support dec(default) and hex
+  drafts: false   #(true)Process draft,(false)Do not process draft. false(default) 
+# Generate categories from directory-tree
+# depth: the max_depth of directory-tree you want to generate, should &gt; 0
+auto_category:
+  enable: true  #true(default)
+  depth:        #3(default)
+  over_write: false 
+ auto_title: false #enable auto title, it can auto fill the title by path
+ auto_date: false #enable auto date, it can auto fill the date by time today
+ force: false #enable force mode,in this mode, the plugin will ignore the cache, and calc the abbrlink for every post even it already had abbrlink.
+</code></pre>
+<p>以下为实例演示，更改内容为<code>alg</code>和<code>rep</code></p>
+<hr>
+<pre><code>crc16 &amp; hex
+https://post.zz173.com/posts/66c8.html
+
+crc16 &amp; dec
+https://post.zz173.com/posts/65535.html
+
+crc32 &amp; hex
+https://post.zz173.com/posts/8ddf18fb.html
+
+crc32 &amp; dec
+https://post.zz173.com/posts/1690090958.html
+</code></pre>
+<hr>
+<p>可以根据需要进行更改。<strong>局限性：crc16的最大帖子数是65535</strong></p>
+<p>打开<code>\scaffolds\post.md</code>，对头进行更改，在头中加入</p>
+<pre><code>abbrlink:
+</code></pre>
+<p>即可。<br><strong>需要注意</strong>的是，新建一篇文章后是不会获得唯一连接的。如果你想要插入本地图片需要先<code>hexo generate</code>后文章头会自动生成唯一连接。</p>
+<h2 id="选修插件"><a href="#选修插件" class="headerlink" title="选修插件"></a>选修插件</h2><h3 id="hexo-generator-feed（RSS订阅连接）"><a href="#hexo-generator-feed（RSS订阅连接）" class="headerlink" title="hexo-generator-feed（RSS订阅连接）"></a>hexo-generator-feed（RSS订阅连接）</h3><p>此插件用于生成RSS订阅连接，如果不需要可以略过。<a href="https://github.com/hexojs/hexo-generator-feed">hexo-generator-feed网址</a><br>打开bash，输入指令安装。</p>
+<pre><code>npm install hexo-generator-feed --save
+</code></pre>
+<p>在网站配置文件中添加以下内容。注意是<strong>网站配置文件而非主题配置文件</strong>。</p>
+<pre><code>#hexo-generator-feed
+feed:
+ type: atom
+ path: atom.xml
+ limit: 20
+ hub:
+ content:
+ content_limit: 140
+ content_limit_delim: &#39; &#39;
+ order_by: -date
+ icon: icon.png
+ autodiscovery: true
+ template:
+</code></pre>
+<p>没有什么更改的，保存即可。</p>
+<hr>
+<h3 id="hexo-blog-encrypt（文章加密）"><a href="#hexo-blog-encrypt（文章加密）" class="headerlink" title="hexo-blog-encrypt（文章加密）"></a>hexo-blog-encrypt（文章加密）</h3><p>此插件用于给文章设置密码，不需要可以略过。<a href="https://github.com/MikeCoder/hexo-blog-encrypt">hexo-blog-encrypt网址</a><br>打开bash，输入指令安装。</p>
+<pre><code>npm install --save hexo-blog-encrypt
+</code></pre>
+<p>需要设置<code>\scaffolds\post.md</code>模板文件，打开后在头内加入</p>
+<pre><code>password: 
+</code></pre>
+<p>这样创建新页面时会自动添加设置密码的属性，如果不设置密码可留空。</p>
+<hr>
+<h3 id="hexo-helper-live2d（二次元看板娘）"><a href="#hexo-helper-live2d（二次元看板娘）" class="headerlink" title="hexo-helper-live2d（二次元看板娘）"></a>hexo-helper-live2d（二次元看板娘）</h3><p>此插件为装饰用插件，不需要可以略过。<a href="https://github.com/EYHN/hexo-helper-live2d">hexo-helper-live2d网址</a><br>打开bash，输入命令安装主程序</p>
+<pre><code>npm install --save hexo-helper-live2d
+</code></pre>
+<p>之后打开<strong>网站配置文件</strong>添加以下代码</p>
+<pre><code># hexo-helper-live2d
+live2d:
+ enable: true
+ scriptFrom: local
+ pluginRootPath: live2dw/
+ pluginJsPath: lib/
+ pluginModelPath: assets/
+ tagMode: false
+ debug: false
+model:
+ use: live2d-widget-model-wanko
+display:
+ position: right
+ width: 150
+ height: 300
+mobile:
+ show: true
+react:
+ opacity: 0.7
+</code></pre>
+<p>这仅仅安装了主程序，我们还需要从网站上下载model来挑选我们喜欢的看板娘。<a href="https://github.com/xiazeyu/live2d-widget-models">model网址</a><br>同样在bash中输入命令下载。下载后的model储存在<code>node_modules</code>文件夹中。此时我们需要将上述代码中</p>
+<pre><code>model:
+ use: live2d-widget-model-wanko
+</code></pre>
+<p>改为你下载的包的名字。之后就可以看到看板娘在你的主页盯着你啦！</p>
+<hr>
+<h3 id="Gitalk（评论插件）"><a href="#Gitalk（评论插件）" class="headerlink" title="Gitalk（评论插件）"></a>Gitalk（评论插件）</h3><p>此插件实现了评论，原理为在网站的库下建立Issues。<a href="https://github.com/gitalk/gitalk">Gitalk网址</a><br>打开bash，输入命令安装。</p>
+<pre><code>npm i --save gitalk
+</code></pre>
+<p>然后前往<a href="https://github.com/settings/applications/new">GitHub Application</a>进行申请。域名和回调地址均填写你的网站的网址。<strong>注意，网址需填写https://，否则回调失败不会登陆</strong></p>
+<p>由于Gitalk已经在主题中配置好，我们只需要在主题配置文件中更改以下内容即可启用Gitalk。</p>
+<pre><code># 2、Gitalk(https://github.com/gitalk/gitalk)
+gitalk:
+ enable: false # true
+ clientID: # GitHub Application Client ID
+ clientSecret: # Client Secret
+ repo: # Repository name
+ owner: # GitHub ID
+ admin: # GitHub ID
+</code></pre>
+<p><code>enable</code>来选择是否启用，<code>clientID</code>内填入GitHub Application Client ID.，<code>clientSecret</code>填入GitHub Application Client Secret.，<code>repo</code>填写你的网站域名，<code>owner</code>填写你Github的ID，<code>admin</code>也是填入你Github的ID。</p>
+<hr>
+<h3 id="hexo-tag-bilibili（bilibili视频）"><a href="#hexo-tag-bilibili（bilibili视频）" class="headerlink" title="hexo-tag-bilibili（bilibili视频）"></a>hexo-tag-bilibili（bilibili视频）</h3><p>此插件可以让你将b站小视频转至你的网站。<a href="https://github.com/Z4Tech/hexo-tag-bilibili">hexo-tag-bilibili网址</a><br>打开bash，输入命令安装。</p>
+<pre><code>npm install --save hexo-tag-bilibili
+</code></pre>
+<p>打开网站配置文件添加以下代码</p>
+<pre><code># hexo-tag-bilibili
+bilibili:
+  width: 452
+  height: 544
+</code></pre>
+<p>使用方式：在文章中添加以下代码</p>
+<pre><code>&#123;% bilibili [av_id] %&#125;
+&#123;% bilibili [av_id] [page] %&#125;
+</code></pre>
+<p>单p时两种形式任意一种均可，但当多p是采用第二种形式。</p>
+<hr>
+<h1 id="尾声"><a href="#尾声" class="headerlink" title="尾声"></a>尾声</h1><p>好了，基本就是这些了。如果以后发现了新奇的小玩意还会开新章说明的~<br>更新时间：2020/8/12 10:27:39 </p>
+]]></content>
+      <tags>
+        <tag>教程</tag>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+</search>
