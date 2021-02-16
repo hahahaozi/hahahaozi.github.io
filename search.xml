@@ -13,88 +13,6 @@
       </tags>
   </entry>
   <entry>
-    <title>如何用win10开启和小伙伴们的链接门——Minecraft开服教程</title>
-    <url>/posts/d8b9f220/</url>
-    <content><![CDATA[<h2 id="序"><a href="#序" class="headerlink" title="序"></a>序</h2><p>从入手开始，就想着从前的激情生活……哦哦不是，是和谐生活。在某易还没代理我的世界前……没错！就是我的世界！一切都那么美好……和小伙伴们开着挂玩mc……（忘了那个软件叫什么了……青绿色的底，中间有一个镐子⛏）</p>
-<p>自从一次体会到买服开服的乐趣之后，便开始了一发不可收拾的买服旅程。从国内的买到国外的。同时还体验了一把“搞基”的乐趣所在。[话说搞完机后更想搞了怎么办？]</p>
-<p>从Windows开到Linux，官方提供的安装包都使用过。后来因为各种更新换代原因，最终抛弃了服务器。（其实是没时间玩了）</p>
-<p>直到这回！该死的吃野味的人把病毒带到了人间。受益停课（呜呜呜呜妈妈我考不上大学了）。我的计划又可以开始了！</p>
-<p>制作时间也就20分钟吧……也不是很长。只是中间端口映射麻烦事。跟着教程走其实还是挺简单的。</p>
-<p>下面，来看一下作死过程……</p>
-<p>哦对，本教程是针对手机客户端的，既通过Google下载的Mineccraft。网易版请直接购买网易服务器。</p>
-<p><strong>本教程无图</strong><br>（懒得截图，上传到图床，再把链接转过来了）</p>
-<h2 id="一：关于服务端的下载"><a href="#一：关于服务端的下载" class="headerlink" title="一：关于服务端的下载"></a>一：关于服务端的下载</h2><p>刚打开mc官网的界面，发现。他，<strong>改版了！</strong>。你懂的我的感受么！逛了10分钟没找到自建服务器的安装包。<a href="https://www.minecraft.net/zh-hans/">官方网站|Minecraft</a><br>最后发现support里变成了我看不懂的样子……于是害死猫的耗子心心动了……</p>
-<blockquote>
-<p>大脑：点进去</p>
-<p>手：哦，点进去</p>
-<p>手：喂等等我为什么要点进去！</p>
-<p>大脑：哪那么多废话，叫你点你就点</p>
-</blockquote>
-<p><a href="https://help.minecraft.net/hc/en-us">帮助中心</a></p>
-<p>嗯就是这个网页……什么？看不懂？没事！我也看不懂……大不了你就全点一遍呗……</p>
-<p>当然！如此聪明的耗子是直接网页翻译的……欸别打我！我错了！</p>
-<p>咳咳……往下划到最低下，找到[PLAYING MINECRAFT],下面第三个标题[Dedicated servers for Minecraft on Bedrock]</p>
-<p>点进去会发现这是一篇Q&amp;A，找到[Q: How do I download the dedicated Bedrock server software?]这个标题。找到第一段最后一行的”here”，你会发现这是一个超链接，点进去。</p>
-<h2 id="二：服务器下载链接"><a href="#二：服务器下载链接" class="headerlink" title="二：服务器下载链接"></a>二：服务器下载链接</h2><blockquote>
-<p>传送门：<a href="https://www.minecraft.net/en-us/download/server/bedrock">服务端下载地址</a><br>更新日期：2020/3/12 13:53:17 </p>
-</blockquote>
-<p>根据版本不同可能链接会发生变动。上面已经告诉了你如何找到服务端，不要再找我了哦~</p>
-<p>下面你可以看到Windows和Linux两种系统的下载方式。</p>
-<h2 id="三：系统要求"><a href="#三：系统要求" class="headerlink" title="三：系统要求"></a>三：系统要求</h2><ul>
-<li>Windows系统要求：由于需要支持环境，而那个.dll文件只在win10中存在。所以版本就是win10或win server2016+ 亲测2012版本不可以。</li>
-<li>Linux系统要求：由于需要支持环境，而手残耗子只在Ubuntu19.04 64bit 版本成功开启过，其下行版本Ubuntu 12.04（64bit）、Ubuntu 16.04（64bit）均无法正常开启。如果是我技术太渣的话各位大佬请忽略此系统要求。</li>
-</ul>
-<p>想起来当时还为了这个文件找遍全网，最后在微软的一篇补丁公告中，几百个.dll找到了这个文件，一看相关信息……</p>
-<p><strong>Shit！</strong></p>
-<hr>
-<p>下面勾选复选框，点击下载。Windows直接下载大家都会……不会自行搜索。Linux使用命令<code>wget</code>用来下载。</p>
-<p>emmmm手头没有Linux系统所以今天用Windows来讲。以后有了Linux可搞再上传吧。</p>
-<p>解压好后打开文件夹，你可以看到一堆文件。下面用记事本打开<code>server.properties</code>文件，以此来设置我们服务器的一些基本设置。</p>
-<h2 id="四：服务器配置文件（server-properties）"><a href="#四：服务器配置文件（server-properties）" class="headerlink" title="四：服务器配置文件（server.properties）"></a>四：服务器配置文件（server.properties）</h2><p>(代码模式怎么也搞不好了……就不放代码框了)</p>
-<p><code>server-name=</code>这个是你服务器的名字，填上你喜欢的就可以了</p>
-<p><code>gamemode=</code>这个是游戏默认模式，分为冒险、生存和创造</p>
-<p><code>difficulty=</code>游戏难度</p>
-<p><code>allow-cheats=</code>是否允许玩家作弊</p>
-<p><code>max-players=</code>服务器最多允许进入人数，可以限制人员</p>
-<p><code>online-mode=</code>是否开启正版验证。其实这个现在有点鸡肋了。如果你下的盗版链接不上xbox账户根本连不了机。而能联机的肯定是正版账户。</p>
-<p><code>white-list=</code>是否启用白名单。如果启用，则需要同步设置此目录下的<code>whitelist.json</code>文件。同样使用记事本打开。</p>
-<p><code>server-port=</code>ipv4端口。一般不用更改，但要记住这个端口，我们后面要用到。</p>
-<p><code>server-portv6=</code>ipv6端口。现在……好多家庭用户还没有ipv6地址，同样不用更改。</p>
-<p><code>view-distance=</code>最远刷新距离（区块）</p>
-<p>好了剩下的我也不知道什么意思，我也没动……</p>
-<p>现在你就配置完文件了，这时保存退出，打开<code>bedrock_server.exe</code>文件。当你看到显示</p>
-<blockquote>
-<p>Server started.</p>
-</blockquote>
-<p>后，服务器就成功开启了。</p>
-<h2 id="五：主机固定内网设置"><a href="#五：主机固定内网设置" class="headerlink" title="五：主机固定内网设置"></a>五：主机固定内网设置</h2><p>后面我们需要端口穿刺……哦不对是端口映射。需要我们将主机的内网ip固定起来，以便开机就可以链接。</p>
-<p>用浏览器打开<code>192.168.1.1</code>，根据路由器的不同管理界面地址可能不一样，这个查看你的路由器说明书就可以了。登录名和密码一般也贴在路由器底部。</p>
-<p>此处以耗子的路由器讲解，各不同路由器管理界面不一致，大同小异。</p>
-<p>登陆后找到更多设置-网络设置-局域网-静态 IP 地址绑定列表，将你要开服务器的主机绑定一个内网ip，最好先查一遍内网的ip，防止重复。</p>
-<p>要记好固定的ip，接下来要用。</p>
-<h2 id="六：关于内网穿透"><a href="#六：关于内网穿透" class="headerlink" title="六：关于内网穿透"></a>六：关于内网穿透</h2><p>由于我内网穿透没有成功，或者说不会搞。所以我是直接买的服务。</p>
-<p><a href="https://cloud.zhexi.tech/">哲西云</a> 优惠码：<code>JF9JYY</code></p>
-<p>注册登录后会有一个免费的1天适用，你可以先试一试能不能穿透再购买。</p>
-<p>下面来讲如何设置。</p>
-<p>进入续断端口映射，选择客户端列表，安装客户端。</p>
-<p>安装好后你会在列表中看到你的计算机。</p>
-<p>选择端口映射-新建隧道。</p>
-<p>隧道名称随意。<br>客户端选择你刚刚的安装客户端的计算机。<br>映射类型选择UDP，因为mc的端口是用的UDP。<br>内网主机输入你刚刚固定的内网ip。<br>内网端口输入默认的19132，如果你在配置文件里更改了端口，在此处应填入更改后的端口。<br>外网端口无法选择。<br>高级选项中基础协议选择QUIC.</p>
-<p>点击创建。这是你会看到你新配置的线路已经成功运行了。</p>
-<p>在“内网主机与外网访问”这一栏你可以看到你的外网端口，应该是一串英文数字的混合。将冒号前的填入游戏中ip地址，将后面的填入端口号。就可以愉快的游戏了。</p>
-<p>点击后面的诊断，可以看到ipv4，如果嫌上面的麻烦可以将系统默认域名一栏中中间的数字地址填入ip地址中。</p>
-<h2 id="七：总结"><a href="#七：总结" class="headerlink" title="七：总结"></a>七：总结</h2><p>如果进入后发现是个红点不要担心，直接连接就好。虽然我也不知道它为什么检测不出来但他确实是可以连上的。</p>
-<p>好了就是这样！可以和小伙伴愉快的联机咯！</p>
-]]></content>
-      <categories>
-        <category>Minecraft</category>
-      </categories>
-      <tags>
-        <tag>教程</tag>
-        <tag>Minecraft</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>终于开通了</title>
     <url>/posts/4c40f6bb/</url>
     <content><![CDATA[<p>搞了一下午再加一上午，放弃了一些实在搞不懂的设置，终于开了这个网站……好吧准确来说也不叫网站。毕竟也没个服务器啥的可搞。但还是搞得焦头烂额，一点都不必mc的服务器省心。</p>
@@ -215,6 +133,88 @@
 ]]></content>
       <tags>
         <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何用win10开启和小伙伴们的链接门——Minecraft开服教程</title>
+    <url>/posts/d8b9f220/</url>
+    <content><![CDATA[<h2 id="序"><a href="#序" class="headerlink" title="序"></a>序</h2><p>从入手开始，就想着从前的激情生活……哦哦不是，是和谐生活。在某易还没代理我的世界前……没错！就是我的世界！一切都那么美好……和小伙伴们开着挂玩mc……（忘了那个软件叫什么了……青绿色的底，中间有一个镐子⛏）</p>
+<p>自从一次体会到买服开服的乐趣之后，便开始了一发不可收拾的买服旅程。从国内的买到国外的。同时还体验了一把“搞基”的乐趣所在。[话说搞完机后更想搞了怎么办？]</p>
+<p>从Windows开到Linux，官方提供的安装包都使用过。后来因为各种更新换代原因，最终抛弃了服务器。（其实是没时间玩了）</p>
+<p>直到这回！该死的吃野味的人把病毒带到了人间。受益停课（呜呜呜呜妈妈我考不上大学了）。我的计划又可以开始了！</p>
+<p>制作时间也就20分钟吧……也不是很长。只是中间端口映射麻烦事。跟着教程走其实还是挺简单的。</p>
+<p>下面，来看一下作死过程……</p>
+<p>哦对，本教程是针对手机客户端的，既通过Google下载的Mineccraft。网易版请直接购买网易服务器。</p>
+<p><strong>本教程无图</strong><br>（懒得截图，上传到图床，再把链接转过来了）</p>
+<h2 id="一：关于服务端的下载"><a href="#一：关于服务端的下载" class="headerlink" title="一：关于服务端的下载"></a>一：关于服务端的下载</h2><p>刚打开mc官网的界面，发现。他，<strong>改版了！</strong>。你懂的我的感受么！逛了10分钟没找到自建服务器的安装包。<a href="https://www.minecraft.net/zh-hans/">官方网站|Minecraft</a><br>最后发现support里变成了我看不懂的样子……于是害死猫的耗子心心动了……</p>
+<blockquote>
+<p>大脑：点进去</p>
+<p>手：哦，点进去</p>
+<p>手：喂等等我为什么要点进去！</p>
+<p>大脑：哪那么多废话，叫你点你就点</p>
+</blockquote>
+<p><a href="https://help.minecraft.net/hc/en-us">帮助中心</a></p>
+<p>嗯就是这个网页……什么？看不懂？没事！我也看不懂……大不了你就全点一遍呗……</p>
+<p>当然！如此聪明的耗子是直接网页翻译的……欸别打我！我错了！</p>
+<p>咳咳……往下划到最低下，找到[PLAYING MINECRAFT],下面第三个标题[Dedicated servers for Minecraft on Bedrock]</p>
+<p>点进去会发现这是一篇Q&amp;A，找到[Q: How do I download the dedicated Bedrock server software?]这个标题。找到第一段最后一行的”here”，你会发现这是一个超链接，点进去。</p>
+<h2 id="二：服务器下载链接"><a href="#二：服务器下载链接" class="headerlink" title="二：服务器下载链接"></a>二：服务器下载链接</h2><blockquote>
+<p>传送门：<a href="https://www.minecraft.net/en-us/download/server/bedrock">服务端下载地址</a><br>更新日期：2020/3/12 13:53:17 </p>
+</blockquote>
+<p>根据版本不同可能链接会发生变动。上面已经告诉了你如何找到服务端，不要再找我了哦~</p>
+<p>下面你可以看到Windows和Linux两种系统的下载方式。</p>
+<h2 id="三：系统要求"><a href="#三：系统要求" class="headerlink" title="三：系统要求"></a>三：系统要求</h2><ul>
+<li>Windows系统要求：由于需要支持环境，而那个.dll文件只在win10中存在。所以版本就是win10或win server2016+ 亲测2012版本不可以。</li>
+<li>Linux系统要求：由于需要支持环境，而手残耗子只在Ubuntu19.04 64bit 版本成功开启过，其下行版本Ubuntu 12.04（64bit）、Ubuntu 16.04（64bit）均无法正常开启。如果是我技术太渣的话各位大佬请忽略此系统要求。</li>
+</ul>
+<p>想起来当时还为了这个文件找遍全网，最后在微软的一篇补丁公告中，几百个.dll找到了这个文件，一看相关信息……</p>
+<p><strong>Shit！</strong></p>
+<hr>
+<p>下面勾选复选框，点击下载。Windows直接下载大家都会……不会自行搜索。Linux使用命令<code>wget</code>用来下载。</p>
+<p>emmmm手头没有Linux系统所以今天用Windows来讲。以后有了Linux可搞再上传吧。</p>
+<p>解压好后打开文件夹，你可以看到一堆文件。下面用记事本打开<code>server.properties</code>文件，以此来设置我们服务器的一些基本设置。</p>
+<h2 id="四：服务器配置文件（server-properties）"><a href="#四：服务器配置文件（server-properties）" class="headerlink" title="四：服务器配置文件（server.properties）"></a>四：服务器配置文件（server.properties）</h2><p>(代码模式怎么也搞不好了……就不放代码框了)</p>
+<p><code>server-name=</code>这个是你服务器的名字，填上你喜欢的就可以了</p>
+<p><code>gamemode=</code>这个是游戏默认模式，分为冒险、生存和创造</p>
+<p><code>difficulty=</code>游戏难度</p>
+<p><code>allow-cheats=</code>是否允许玩家作弊</p>
+<p><code>max-players=</code>服务器最多允许进入人数，可以限制人员</p>
+<p><code>online-mode=</code>是否开启正版验证。其实这个现在有点鸡肋了。如果你下的盗版链接不上xbox账户根本连不了机。而能联机的肯定是正版账户。</p>
+<p><code>white-list=</code>是否启用白名单。如果启用，则需要同步设置此目录下的<code>whitelist.json</code>文件。同样使用记事本打开。</p>
+<p><code>server-port=</code>ipv4端口。一般不用更改，但要记住这个端口，我们后面要用到。</p>
+<p><code>server-portv6=</code>ipv6端口。现在……好多家庭用户还没有ipv6地址，同样不用更改。</p>
+<p><code>view-distance=</code>最远刷新距离（区块）</p>
+<p>好了剩下的我也不知道什么意思，我也没动……</p>
+<p>现在你就配置完文件了，这时保存退出，打开<code>bedrock_server.exe</code>文件。当你看到显示</p>
+<blockquote>
+<p>Server started.</p>
+</blockquote>
+<p>后，服务器就成功开启了。</p>
+<h2 id="五：主机固定内网设置"><a href="#五：主机固定内网设置" class="headerlink" title="五：主机固定内网设置"></a>五：主机固定内网设置</h2><p>后面我们需要端口穿刺……哦不对是端口映射。需要我们将主机的内网ip固定起来，以便开机就可以链接。</p>
+<p>用浏览器打开<code>192.168.1.1</code>，根据路由器的不同管理界面地址可能不一样，这个查看你的路由器说明书就可以了。登录名和密码一般也贴在路由器底部。</p>
+<p>此处以耗子的路由器讲解，各不同路由器管理界面不一致，大同小异。</p>
+<p>登陆后找到更多设置-网络设置-局域网-静态 IP 地址绑定列表，将你要开服务器的主机绑定一个内网ip，最好先查一遍内网的ip，防止重复。</p>
+<p>要记好固定的ip，接下来要用。</p>
+<h2 id="六：关于内网穿透"><a href="#六：关于内网穿透" class="headerlink" title="六：关于内网穿透"></a>六：关于内网穿透</h2><p>由于我内网穿透没有成功，或者说不会搞。所以我是直接买的服务。</p>
+<p><a href="https://cloud.zhexi.tech/">哲西云</a> 优惠码：<code>JF9JYY</code></p>
+<p>注册登录后会有一个免费的1天适用，你可以先试一试能不能穿透再购买。</p>
+<p>下面来讲如何设置。</p>
+<p>进入续断端口映射，选择客户端列表，安装客户端。</p>
+<p>安装好后你会在列表中看到你的计算机。</p>
+<p>选择端口映射-新建隧道。</p>
+<p>隧道名称随意。<br>客户端选择你刚刚的安装客户端的计算机。<br>映射类型选择UDP，因为mc的端口是用的UDP。<br>内网主机输入你刚刚固定的内网ip。<br>内网端口输入默认的19132，如果你在配置文件里更改了端口，在此处应填入更改后的端口。<br>外网端口无法选择。<br>高级选项中基础协议选择QUIC.</p>
+<p>点击创建。这是你会看到你新配置的线路已经成功运行了。</p>
+<p>在“内网主机与外网访问”这一栏你可以看到你的外网端口，应该是一串英文数字的混合。将冒号前的填入游戏中ip地址，将后面的填入端口号。就可以愉快的游戏了。</p>
+<p>点击后面的诊断，可以看到ipv4，如果嫌上面的麻烦可以将系统默认域名一栏中中间的数字地址填入ip地址中。</p>
+<h2 id="七：总结"><a href="#七：总结" class="headerlink" title="七：总结"></a>七：总结</h2><p>如果进入后发现是个红点不要担心，直接连接就好。虽然我也不知道它为什么检测不出来但他确实是可以连上的。</p>
+<p>好了就是这样！可以和小伙伴愉快的联机咯！</p>
+]]></content>
+      <categories>
+        <category>Minecraft</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
+        <tag>Minecraft</tag>
       </tags>
   </entry>
   <entry>
