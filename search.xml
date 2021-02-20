@@ -13,211 +13,6 @@
       </tags>
   </entry>
   <entry>
-    <title>终于开通了</title>
-    <url>/posts/4c40f6bb/</url>
-    <content><![CDATA[<p>搞了一下午再加一上午，放弃了一些实在搞不懂的设置，终于开了这个网站……好吧准确来说也不叫网站。毕竟也没个服务器啥的可搞。但还是搞得焦头烂额，一点都不必mc的服务器省心。</p>
-<h2 id="下面来交代一下我的制作过程"><a href="#下面来交代一下我的制作过程" class="headerlink" title="下面来交代一下我的制作过程"></a>下面来交代一下我的制作过程</h2><h3 id="制作（作死）过程"><a href="#制作（作死）过程" class="headerlink" title="制作（作死）过程"></a>制作（作死）过程</h3><p>起因源于幻灵大佬（@huanling）查看了我的网页<a href="http://hahahaozi.top/">耗子主页</a>后告诉我我的网站挂掉了。</p>
-<blockquote>
-<p>耗子，你主页被ban了</p>
-</blockquote>
-<p>嗯嗯……一直在被ban，从未出现。</p>
-<blockquote>
-<p>我的是GitHubPages静态站点，用阿里云认证解析了一下就OK了</p>
-</blockquote>
-<p>！居然还有如此简便快捷可以挂网站的方法！搞起！</p>
-<blockquote>
-<p>额……所以hexo是什么……？？？</p>
-</blockquote>
-<p>看看我蒙蔽的小眼神……开始百度！啊不对……谷歌！</p>
-<p>嗯嗯找到了搜到的教程，开始看着走……然后</p>
-<hr>
-<h2 id="坑来了"><a href="#坑来了" class="headerlink" title="坑来了"></a><strong>坑来了</strong></h2><p>看了开头的安装git，以为只是一个个人习惯问题，不装用cmd也可以。进行到第二步就证明我错了……由于我没有安装git，所以我下不下来安装文件……于是又灰溜溜的回去下载压缩文件。</p>
-<p><code>hexo server</code><br>启动！</p>
-<p><code>http://localhost:4000/</code></p>
-<p>成功！</p>
-<p><code>hexo deploy</code></p>
-<p><code>http://hahahaozi.github.io</code></p>
-<p>ok啦！</p>
-<p>下面开始干什么！哦！绑定域名！</p>
-<hr>
-<h1 id="大坑警告"><a href="#大坑警告" class="headerlink" title="大坑警告"></a>大坑警告</h1><hr>
-<p>打开阿里云！设置DNS！链接！</p>
-<h1 id="叮！"><a href="#叮！" class="headerlink" title="叮！"></a>叮！</h1><p>打开浏览器，输入域名！</p>
-<p><code>http://hahahaozi.top</code></p>
-<blockquote>
-<p>TestPage184</p>
-</blockquote>
-<p>您的网页xxxxxx……</p>
-<p>好吧看来阿里云拦住了我……</p>
-<p>那我把DNS删了吧。</p>
-<p><code>delete</code></p>
-<p><code>http://hahahaozi.github.io</code></p>
-<blockquote>
-<p>跳转中。。。</p>
-</blockquote>
-<p><code>http://hahahaozi.top</code></p>
-<blockquote>
-<p>TestPage184</p>
-</blockquote>
-<p>我的天哪！怎么固定不动了！</p>
-<p>试了各种方法，都不能解除跳转。</p>
-<p><strong>都</strong><br>  <strong>不</strong><br>    <strong>行</strong></p>
-<hr>
-<h3 id="Three-hours-later"><a href="#Three-hours-later" class="headerlink" title="Three hours later"></a>Three hours later</h3><hr>
-<p>好吧我已经放弃了……关了吧……欸我再试试……</p>
-<blockquote>
-<p>关闭浏览器</p>
-</blockquote>
-<blockquote>
-<p>大脑一抽</p>
-</blockquote>
-<blockquote>
-<p>打开浏览器</p>
-</blockquote>
-<blockquote>
-<p>输入网址</p>
-</blockquote>
-<h2 id="Enter！"><a href="#Enter！" class="headerlink" title="Enter！"></a>Enter！</h2><p>当当当！打开了！</p>
-<p>我去！浏览器你好玩么！让我白折腾三个小时！</p>
-<p>呼终于可以直接打开了。</p>
-<p>嗯？你以为这就结束了？本耗子表示<br><strong>这只是个开始</strong></p>
-<hr>
-<p>emmm可以改主题……发费的耗子怎么能放弃呢？看看这个主题，多么可爱<del>看看这个背景，我多么喜欢</del>啊~就是你了皮卡丘！……啊不对<a href="https://github.com/Shen-Yu/hexo-theme-ayer">ayer</a>!</p>
-<blockquote>
-<p>下载ing&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</p>
-</blockquote>
-<p>emmmm挪到<code>themes</code>文件夹里,照着官方教程乱改一气……<br>打开<code>_config.yml</code>,设置主题为<code>ayer</code></p>
-<p><code>hexo generate</code>!</p>
-<p>欸怎么这么多错误？算了试试直接运行。</p>
-<p><code>hexo server</code></p>
-<p>完了，根本运行不了啊……看看上面有多少错误……</p>
-<blockquote>
-<p>10分钟后</p>
-</blockquote>
-<p>啊完全修不过来啊……删了重新下载吧……</p>
-<p><code>delete</code></p>
-<p>欸……我怎么<code>hexo</code>也没有用了？</p>
-<blockquote>
-<p>自我检查ing&gt;&gt;&gt;&gt;&gt;&gt;&gt;</p>
-</blockquote>
-<p>哦……我好像吧初始文件删了……算了算了再来一遍吧……（此处重复千千遍）</p>
-<p>更改主题，上传……emmm可以显示，那就挨个设置吧……</p>
-<hr>
-<p>好了找到问题了，可能是瞎安装的插件结果插件没能顺利运行的原因……<br>那下面继续来作死吧！o(<em>￣▽￣</em>)ブ</p>
-<hr>
-<h1 id="Part-n"><a href="#Part-n" class="headerlink" title="Part n"></a>Part n</h1><hr>
-<h2 id="网易云音乐"><a href="#网易云音乐" class="headerlink" title="网易云音乐"></a>网易云音乐</h2><p>emmm在设置的过程中发现可以播放歌曲，那就走起！<br>设置尺寸……开启自动播放……输入歌单ID……嗯？怎么不显示？<br>那换个歌单试试。<br>emmmmm还不行……</p>
-<p>百度一下……改个代码？找一找……嗯嗯复制粘贴……<br>咦！可以播放歌单了！换一首歌！</p>
-<p>可换了一首歌为什么就不行了？<br>再换一首？还是不行……</p>
-<p>这时，我忽然想起了一个重要的问题</p>
-<h2 id="版权！！！"><a href="#版权！！！" class="headerlink" title="版权！！！"></a>版权！！！</h2><p>会不会是没有版权呢？</p>
-<p>事实证明，是的，我的歌单中大部分是不允许生成外链的……</p>
-<p>那么！算了还是找一首有版权的歌曲吧……</p>
-<p>好了！音乐可以正常播放了，那我们是不是要搞一个评论系统呢？要得！安排！</p>
-<hr>
-<h2 id="gitalk"><a href="#gitalk" class="headerlink" title="gitalk"></a>gitalk</h2><p>emmm就用<a href="http://github.com/gitalk/gitalk">gitalk</a>吧!</p>
-<p>首先，按照教程安装gitalk，去申请一个密钥……粘贴进去……F5！当当当出来了！</p>
-<p>但为什么显示未连接？难道是因为没有上传的原因？</p>
-<p><code>hexo deploy</code></p>
-<p>还是不行？那只好再去百度了。</p>
-<p>跟着教程溜了溜，再次上传，显示：坏的凭证</p>
-<p>（耗式蒙蔽）？？？？？</p>
-<p>(╯‵□′)╯︵┻━┻lz不搞了！</p>
-<p>好了就是这样……</p>
-<hr>
-<p>另附三篇教程链接：<br><a href="https://www.cnblogs.com/visugar/p/6821777.html">hexo从零开始到搭建完成</a></p>
-<p><a href="https://sspai.com/post/25137">认识与入门Markdown</a></p>
-<p><a href="https://mrcxt.github.io/hexo/%E8%A7%A3%E5%86%B3hexo%E4%B8%8B%E5%88%86%E7%B1%BB%E5%92%8C%E6%A0%87%E7%AD%BE%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA%E7%9A%84%E9%97%AE%E9%A2%98/">完美解决hexo下分类和标签无法显示的问题</a></p>
-<hr>
-<p>鸣谢：@huanling 幻灵哥提供的教程</p>
-]]></content>
-      <tags>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>如何用win10开启和小伙伴们的链接门——Minecraft开服教程</title>
-    <url>/posts/d8b9f220/</url>
-    <content><![CDATA[<h2 id="序"><a href="#序" class="headerlink" title="序"></a>序</h2><p>从入手开始，就想着从前的激情生活……哦哦不是，是和谐生活。在某易还没代理我的世界前……没错！就是我的世界！一切都那么美好……和小伙伴们开着挂玩mc……（忘了那个软件叫什么了……青绿色的底，中间有一个镐子⛏）</p>
-<p>自从一次体会到买服开服的乐趣之后，便开始了一发不可收拾的买服旅程。从国内的买到国外的。同时还体验了一把“搞基”的乐趣所在。[话说搞完机后更想搞了怎么办？]</p>
-<p>从Windows开到Linux，官方提供的安装包都使用过。后来因为各种更新换代原因，最终抛弃了服务器。（其实是没时间玩了）</p>
-<p>直到这回！该死的吃野味的人把病毒带到了人间。受益停课（呜呜呜呜妈妈我考不上大学了）。我的计划又可以开始了！</p>
-<p>制作时间也就20分钟吧……也不是很长。只是中间端口映射麻烦事。跟着教程走其实还是挺简单的。</p>
-<p>下面，来看一下作死过程……</p>
-<p>哦对，本教程是针对手机客户端的，既通过Google下载的Mineccraft。网易版请直接购买网易服务器。</p>
-<p><strong>本教程无图</strong><br>（懒得截图，上传到图床，再把链接转过来了）</p>
-<h2 id="一：关于服务端的下载"><a href="#一：关于服务端的下载" class="headerlink" title="一：关于服务端的下载"></a>一：关于服务端的下载</h2><p>刚打开mc官网的界面，发现。他，<strong>改版了！</strong>。你懂的我的感受么！逛了10分钟没找到自建服务器的安装包。<a href="https://www.minecraft.net/zh-hans/">官方网站|Minecraft</a><br>最后发现support里变成了我看不懂的样子……于是害死猫的耗子心心动了……</p>
-<blockquote>
-<p>大脑：点进去</p>
-<p>手：哦，点进去</p>
-<p>手：喂等等我为什么要点进去！</p>
-<p>大脑：哪那么多废话，叫你点你就点</p>
-</blockquote>
-<p><a href="https://help.minecraft.net/hc/en-us">帮助中心</a></p>
-<p>嗯就是这个网页……什么？看不懂？没事！我也看不懂……大不了你就全点一遍呗……</p>
-<p>当然！如此聪明的耗子是直接网页翻译的……欸别打我！我错了！</p>
-<p>咳咳……往下划到最低下，找到[PLAYING MINECRAFT],下面第三个标题[Dedicated servers for Minecraft on Bedrock]</p>
-<p>点进去会发现这是一篇Q&amp;A，找到[Q: How do I download the dedicated Bedrock server software?]这个标题。找到第一段最后一行的”here”，你会发现这是一个超链接，点进去。</p>
-<h2 id="二：服务器下载链接"><a href="#二：服务器下载链接" class="headerlink" title="二：服务器下载链接"></a>二：服务器下载链接</h2><blockquote>
-<p>传送门：<a href="https://www.minecraft.net/en-us/download/server/bedrock">服务端下载地址</a><br>更新日期：2020/3/12 13:53:17 </p>
-</blockquote>
-<p>根据版本不同可能链接会发生变动。上面已经告诉了你如何找到服务端，不要再找我了哦~</p>
-<p>下面你可以看到Windows和Linux两种系统的下载方式。</p>
-<h2 id="三：系统要求"><a href="#三：系统要求" class="headerlink" title="三：系统要求"></a>三：系统要求</h2><ul>
-<li>Windows系统要求：由于需要支持环境，而那个.dll文件只在win10中存在。所以版本就是win10或win server2016+ 亲测2012版本不可以。</li>
-<li>Linux系统要求：由于需要支持环境，而手残耗子只在Ubuntu19.04 64bit 版本成功开启过，其下行版本Ubuntu 12.04（64bit）、Ubuntu 16.04（64bit）均无法正常开启。如果是我技术太渣的话各位大佬请忽略此系统要求。</li>
-</ul>
-<p>想起来当时还为了这个文件找遍全网，最后在微软的一篇补丁公告中，几百个.dll找到了这个文件，一看相关信息……</p>
-<p><strong>Shit！</strong></p>
-<hr>
-<p>下面勾选复选框，点击下载。Windows直接下载大家都会……不会自行搜索。Linux使用命令<code>wget</code>用来下载。</p>
-<p>emmmm手头没有Linux系统所以今天用Windows来讲。以后有了Linux可搞再上传吧。</p>
-<p>解压好后打开文件夹，你可以看到一堆文件。下面用记事本打开<code>server.properties</code>文件，以此来设置我们服务器的一些基本设置。</p>
-<h2 id="四：服务器配置文件（server-properties）"><a href="#四：服务器配置文件（server-properties）" class="headerlink" title="四：服务器配置文件（server.properties）"></a>四：服务器配置文件（server.properties）</h2><p>(代码模式怎么也搞不好了……就不放代码框了)</p>
-<p><code>server-name=</code>这个是你服务器的名字，填上你喜欢的就可以了</p>
-<p><code>gamemode=</code>这个是游戏默认模式，分为冒险、生存和创造</p>
-<p><code>difficulty=</code>游戏难度</p>
-<p><code>allow-cheats=</code>是否允许玩家作弊</p>
-<p><code>max-players=</code>服务器最多允许进入人数，可以限制人员</p>
-<p><code>online-mode=</code>是否开启正版验证。其实这个现在有点鸡肋了。如果你下的盗版链接不上xbox账户根本连不了机。而能联机的肯定是正版账户。</p>
-<p><code>white-list=</code>是否启用白名单。如果启用，则需要同步设置此目录下的<code>whitelist.json</code>文件。同样使用记事本打开。</p>
-<p><code>server-port=</code>ipv4端口。一般不用更改，但要记住这个端口，我们后面要用到。</p>
-<p><code>server-portv6=</code>ipv6端口。现在……好多家庭用户还没有ipv6地址，同样不用更改。</p>
-<p><code>view-distance=</code>最远刷新距离（区块）</p>
-<p>好了剩下的我也不知道什么意思，我也没动……</p>
-<p>现在你就配置完文件了，这时保存退出，打开<code>bedrock_server.exe</code>文件。当你看到显示</p>
-<blockquote>
-<p>Server started.</p>
-</blockquote>
-<p>后，服务器就成功开启了。</p>
-<h2 id="五：主机固定内网设置"><a href="#五：主机固定内网设置" class="headerlink" title="五：主机固定内网设置"></a>五：主机固定内网设置</h2><p>后面我们需要端口穿刺……哦不对是端口映射。需要我们将主机的内网ip固定起来，以便开机就可以链接。</p>
-<p>用浏览器打开<code>192.168.1.1</code>，根据路由器的不同管理界面地址可能不一样，这个查看你的路由器说明书就可以了。登录名和密码一般也贴在路由器底部。</p>
-<p>此处以耗子的路由器讲解，各不同路由器管理界面不一致，大同小异。</p>
-<p>登陆后找到更多设置-网络设置-局域网-静态 IP 地址绑定列表，将你要开服务器的主机绑定一个内网ip，最好先查一遍内网的ip，防止重复。</p>
-<p>要记好固定的ip，接下来要用。</p>
-<h2 id="六：关于内网穿透"><a href="#六：关于内网穿透" class="headerlink" title="六：关于内网穿透"></a>六：关于内网穿透</h2><p>由于我内网穿透没有成功，或者说不会搞。所以我是直接买的服务。</p>
-<p><a href="https://cloud.zhexi.tech/">哲西云</a> 优惠码：<code>JF9JYY</code></p>
-<p>注册登录后会有一个免费的1天适用，你可以先试一试能不能穿透再购买。</p>
-<p>下面来讲如何设置。</p>
-<p>进入续断端口映射，选择客户端列表，安装客户端。</p>
-<p>安装好后你会在列表中看到你的计算机。</p>
-<p>选择端口映射-新建隧道。</p>
-<p>隧道名称随意。<br>客户端选择你刚刚的安装客户端的计算机。<br>映射类型选择UDP，因为mc的端口是用的UDP。<br>内网主机输入你刚刚固定的内网ip。<br>内网端口输入默认的19132，如果你在配置文件里更改了端口，在此处应填入更改后的端口。<br>外网端口无法选择。<br>高级选项中基础协议选择QUIC.</p>
-<p>点击创建。这是你会看到你新配置的线路已经成功运行了。</p>
-<p>在“内网主机与外网访问”这一栏你可以看到你的外网端口，应该是一串英文数字的混合。将冒号前的填入游戏中ip地址，将后面的填入端口号。就可以愉快的游戏了。</p>
-<p>点击后面的诊断，可以看到ipv4，如果嫌上面的麻烦可以将系统默认域名一栏中中间的数字地址填入ip地址中。</p>
-<h2 id="七：总结"><a href="#七：总结" class="headerlink" title="七：总结"></a>七：总结</h2><p>如果进入后发现是个红点不要担心，直接连接就好。虽然我也不知道它为什么检测不出来但他确实是可以连上的。</p>
-<p>好了就是这样！可以和小伙伴愉快的联机咯！</p>
-]]></content>
-      <categories>
-        <category>Minecraft</category>
-      </categories>
-      <tags>
-        <tag>教程</tag>
-        <tag>Minecraft</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>hexo从入门到炸机</title>
     <url>/posts/f5f6960b/</url>
     <content><![CDATA[<h1 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h1><p>  自从换完电脑重新开启网站后，发现好多在原来的 <del>教程贴</del> 心理描写帖里并不能完全的使我回忆起并且重现。所以我开了这篇真·教程贴，一方面可以帮助萌新 <del>重新踩坑</del> ，另一方面可以让我回忆起当时的Error并可以在其他网站/重开网站时进行重现。<br><a href="https://hahahaozi.github.io/posts/4c40f6bb.html">原教程贴</a></p>
@@ -1123,6 +918,211 @@ bilibili:
       <tags>
         <tag>教程</tag>
         <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何用win10开启和小伙伴们的链接门——Minecraft开服教程</title>
+    <url>/posts/d8b9f220/</url>
+    <content><![CDATA[<h2 id="序"><a href="#序" class="headerlink" title="序"></a>序</h2><p>从入手开始，就想着从前的激情生活……哦哦不是，是和谐生活。在某易还没代理我的世界前……没错！就是我的世界！一切都那么美好……和小伙伴们开着挂玩mc……（忘了那个软件叫什么了……青绿色的底，中间有一个镐子⛏）</p>
+<p>自从一次体会到买服开服的乐趣之后，便开始了一发不可收拾的买服旅程。从国内的买到国外的。同时还体验了一把“搞基”的乐趣所在。[话说搞完机后更想搞了怎么办？]</p>
+<p>从Windows开到Linux，官方提供的安装包都使用过。后来因为各种更新换代原因，最终抛弃了服务器。（其实是没时间玩了）</p>
+<p>直到这回！该死的吃野味的人把病毒带到了人间。受益停课（呜呜呜呜妈妈我考不上大学了）。我的计划又可以开始了！</p>
+<p>制作时间也就20分钟吧……也不是很长。只是中间端口映射麻烦事。跟着教程走其实还是挺简单的。</p>
+<p>下面，来看一下作死过程……</p>
+<p>哦对，本教程是针对手机客户端的，既通过Google下载的Mineccraft。网易版请直接购买网易服务器。</p>
+<p><strong>本教程无图</strong><br>（懒得截图，上传到图床，再把链接转过来了）</p>
+<h2 id="一：关于服务端的下载"><a href="#一：关于服务端的下载" class="headerlink" title="一：关于服务端的下载"></a>一：关于服务端的下载</h2><p>刚打开mc官网的界面，发现。他，<strong>改版了！</strong>。你懂的我的感受么！逛了10分钟没找到自建服务器的安装包。<a href="https://www.minecraft.net/zh-hans/">官方网站|Minecraft</a><br>最后发现support里变成了我看不懂的样子……于是害死猫的耗子心心动了……</p>
+<blockquote>
+<p>大脑：点进去</p>
+<p>手：哦，点进去</p>
+<p>手：喂等等我为什么要点进去！</p>
+<p>大脑：哪那么多废话，叫你点你就点</p>
+</blockquote>
+<p><a href="https://help.minecraft.net/hc/en-us">帮助中心</a></p>
+<p>嗯就是这个网页……什么？看不懂？没事！我也看不懂……大不了你就全点一遍呗……</p>
+<p>当然！如此聪明的耗子是直接网页翻译的……欸别打我！我错了！</p>
+<p>咳咳……往下划到最低下，找到[PLAYING MINECRAFT],下面第三个标题[Dedicated servers for Minecraft on Bedrock]</p>
+<p>点进去会发现这是一篇Q&amp;A，找到[Q: How do I download the dedicated Bedrock server software?]这个标题。找到第一段最后一行的”here”，你会发现这是一个超链接，点进去。</p>
+<h2 id="二：服务器下载链接"><a href="#二：服务器下载链接" class="headerlink" title="二：服务器下载链接"></a>二：服务器下载链接</h2><blockquote>
+<p>传送门：<a href="https://www.minecraft.net/en-us/download/server/bedrock">服务端下载地址</a><br>更新日期：2020/3/12 13:53:17 </p>
+</blockquote>
+<p>根据版本不同可能链接会发生变动。上面已经告诉了你如何找到服务端，不要再找我了哦~</p>
+<p>下面你可以看到Windows和Linux两种系统的下载方式。</p>
+<h2 id="三：系统要求"><a href="#三：系统要求" class="headerlink" title="三：系统要求"></a>三：系统要求</h2><ul>
+<li>Windows系统要求：由于需要支持环境，而那个.dll文件只在win10中存在。所以版本就是win10或win server2016+ 亲测2012版本不可以。</li>
+<li>Linux系统要求：由于需要支持环境，而手残耗子只在Ubuntu19.04 64bit 版本成功开启过，其下行版本Ubuntu 12.04（64bit）、Ubuntu 16.04（64bit）均无法正常开启。如果是我技术太渣的话各位大佬请忽略此系统要求。</li>
+</ul>
+<p>想起来当时还为了这个文件找遍全网，最后在微软的一篇补丁公告中，几百个.dll找到了这个文件，一看相关信息……</p>
+<p><strong>Shit！</strong></p>
+<hr>
+<p>下面勾选复选框，点击下载。Windows直接下载大家都会……不会自行搜索。Linux使用命令<code>wget</code>用来下载。</p>
+<p>emmmm手头没有Linux系统所以今天用Windows来讲。以后有了Linux可搞再上传吧。</p>
+<p>解压好后打开文件夹，你可以看到一堆文件。下面用记事本打开<code>server.properties</code>文件，以此来设置我们服务器的一些基本设置。</p>
+<h2 id="四：服务器配置文件（server-properties）"><a href="#四：服务器配置文件（server-properties）" class="headerlink" title="四：服务器配置文件（server.properties）"></a>四：服务器配置文件（server.properties）</h2><p>(代码模式怎么也搞不好了……就不放代码框了)</p>
+<p><code>server-name=</code>这个是你服务器的名字，填上你喜欢的就可以了</p>
+<p><code>gamemode=</code>这个是游戏默认模式，分为冒险、生存和创造</p>
+<p><code>difficulty=</code>游戏难度</p>
+<p><code>allow-cheats=</code>是否允许玩家作弊</p>
+<p><code>max-players=</code>服务器最多允许进入人数，可以限制人员</p>
+<p><code>online-mode=</code>是否开启正版验证。其实这个现在有点鸡肋了。如果你下的盗版链接不上xbox账户根本连不了机。而能联机的肯定是正版账户。</p>
+<p><code>white-list=</code>是否启用白名单。如果启用，则需要同步设置此目录下的<code>whitelist.json</code>文件。同样使用记事本打开。</p>
+<p><code>server-port=</code>ipv4端口。一般不用更改，但要记住这个端口，我们后面要用到。</p>
+<p><code>server-portv6=</code>ipv6端口。现在……好多家庭用户还没有ipv6地址，同样不用更改。</p>
+<p><code>view-distance=</code>最远刷新距离（区块）</p>
+<p>好了剩下的我也不知道什么意思，我也没动……</p>
+<p>现在你就配置完文件了，这时保存退出，打开<code>bedrock_server.exe</code>文件。当你看到显示</p>
+<blockquote>
+<p>Server started.</p>
+</blockquote>
+<p>后，服务器就成功开启了。</p>
+<h2 id="五：主机固定内网设置"><a href="#五：主机固定内网设置" class="headerlink" title="五：主机固定内网设置"></a>五：主机固定内网设置</h2><p>后面我们需要端口穿刺……哦不对是端口映射。需要我们将主机的内网ip固定起来，以便开机就可以链接。</p>
+<p>用浏览器打开<code>192.168.1.1</code>，根据路由器的不同管理界面地址可能不一样，这个查看你的路由器说明书就可以了。登录名和密码一般也贴在路由器底部。</p>
+<p>此处以耗子的路由器讲解，各不同路由器管理界面不一致，大同小异。</p>
+<p>登陆后找到更多设置-网络设置-局域网-静态 IP 地址绑定列表，将你要开服务器的主机绑定一个内网ip，最好先查一遍内网的ip，防止重复。</p>
+<p>要记好固定的ip，接下来要用。</p>
+<h2 id="六：关于内网穿透"><a href="#六：关于内网穿透" class="headerlink" title="六：关于内网穿透"></a>六：关于内网穿透</h2><p>由于我内网穿透没有成功，或者说不会搞。所以我是直接买的服务。</p>
+<p><a href="https://cloud.zhexi.tech/">哲西云</a> 优惠码：<code>JF9JYY</code></p>
+<p>注册登录后会有一个免费的1天适用，你可以先试一试能不能穿透再购买。</p>
+<p>下面来讲如何设置。</p>
+<p>进入续断端口映射，选择客户端列表，安装客户端。</p>
+<p>安装好后你会在列表中看到你的计算机。</p>
+<p>选择端口映射-新建隧道。</p>
+<p>隧道名称随意。<br>客户端选择你刚刚的安装客户端的计算机。<br>映射类型选择UDP，因为mc的端口是用的UDP。<br>内网主机输入你刚刚固定的内网ip。<br>内网端口输入默认的19132，如果你在配置文件里更改了端口，在此处应填入更改后的端口。<br>外网端口无法选择。<br>高级选项中基础协议选择QUIC.</p>
+<p>点击创建。这是你会看到你新配置的线路已经成功运行了。</p>
+<p>在“内网主机与外网访问”这一栏你可以看到你的外网端口，应该是一串英文数字的混合。将冒号前的填入游戏中ip地址，将后面的填入端口号。就可以愉快的游戏了。</p>
+<p>点击后面的诊断，可以看到ipv4，如果嫌上面的麻烦可以将系统默认域名一栏中中间的数字地址填入ip地址中。</p>
+<h2 id="七：总结"><a href="#七：总结" class="headerlink" title="七：总结"></a>七：总结</h2><p>如果进入后发现是个红点不要担心，直接连接就好。虽然我也不知道它为什么检测不出来但他确实是可以连上的。</p>
+<p>好了就是这样！可以和小伙伴愉快的联机咯！</p>
+]]></content>
+      <categories>
+        <category>Minecraft</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
+        <tag>Minecraft</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>终于开通了</title>
+    <url>/posts/4c40f6bb/</url>
+    <content><![CDATA[<p>搞了一下午再加一上午，放弃了一些实在搞不懂的设置，终于开了这个网站……好吧准确来说也不叫网站。毕竟也没个服务器啥的可搞。但还是搞得焦头烂额，一点都不必mc的服务器省心。</p>
+<h2 id="下面来交代一下我的制作过程"><a href="#下面来交代一下我的制作过程" class="headerlink" title="下面来交代一下我的制作过程"></a>下面来交代一下我的制作过程</h2><h3 id="制作（作死）过程"><a href="#制作（作死）过程" class="headerlink" title="制作（作死）过程"></a>制作（作死）过程</h3><p>起因源于幻灵大佬（@huanling）查看了我的网页<a href="http://hahahaozi.top/">耗子主页</a>后告诉我我的网站挂掉了。</p>
+<blockquote>
+<p>耗子，你主页被ban了</p>
+</blockquote>
+<p>嗯嗯……一直在被ban，从未出现。</p>
+<blockquote>
+<p>我的是GitHubPages静态站点，用阿里云认证解析了一下就OK了</p>
+</blockquote>
+<p>！居然还有如此简便快捷可以挂网站的方法！搞起！</p>
+<blockquote>
+<p>额……所以hexo是什么……？？？</p>
+</blockquote>
+<p>看看我蒙蔽的小眼神……开始百度！啊不对……谷歌！</p>
+<p>嗯嗯找到了搜到的教程，开始看着走……然后</p>
+<hr>
+<h2 id="坑来了"><a href="#坑来了" class="headerlink" title="坑来了"></a><strong>坑来了</strong></h2><p>看了开头的安装git，以为只是一个个人习惯问题，不装用cmd也可以。进行到第二步就证明我错了……由于我没有安装git，所以我下不下来安装文件……于是又灰溜溜的回去下载压缩文件。</p>
+<p><code>hexo server</code><br>启动！</p>
+<p><code>http://localhost:4000/</code></p>
+<p>成功！</p>
+<p><code>hexo deploy</code></p>
+<p><code>http://hahahaozi.github.io</code></p>
+<p>ok啦！</p>
+<p>下面开始干什么！哦！绑定域名！</p>
+<hr>
+<h1 id="大坑警告"><a href="#大坑警告" class="headerlink" title="大坑警告"></a>大坑警告</h1><hr>
+<p>打开阿里云！设置DNS！链接！</p>
+<h1 id="叮！"><a href="#叮！" class="headerlink" title="叮！"></a>叮！</h1><p>打开浏览器，输入域名！</p>
+<p><code>http://hahahaozi.top</code></p>
+<blockquote>
+<p>TestPage184</p>
+</blockquote>
+<p>您的网页xxxxxx……</p>
+<p>好吧看来阿里云拦住了我……</p>
+<p>那我把DNS删了吧。</p>
+<p><code>delete</code></p>
+<p><code>http://hahahaozi.github.io</code></p>
+<blockquote>
+<p>跳转中。。。</p>
+</blockquote>
+<p><code>http://hahahaozi.top</code></p>
+<blockquote>
+<p>TestPage184</p>
+</blockquote>
+<p>我的天哪！怎么固定不动了！</p>
+<p>试了各种方法，都不能解除跳转。</p>
+<p><strong>都</strong><br>  <strong>不</strong><br>    <strong>行</strong></p>
+<hr>
+<h3 id="Three-hours-later"><a href="#Three-hours-later" class="headerlink" title="Three hours later"></a>Three hours later</h3><hr>
+<p>好吧我已经放弃了……关了吧……欸我再试试……</p>
+<blockquote>
+<p>关闭浏览器</p>
+</blockquote>
+<blockquote>
+<p>大脑一抽</p>
+</blockquote>
+<blockquote>
+<p>打开浏览器</p>
+</blockquote>
+<blockquote>
+<p>输入网址</p>
+</blockquote>
+<h2 id="Enter！"><a href="#Enter！" class="headerlink" title="Enter！"></a>Enter！</h2><p>当当当！打开了！</p>
+<p>我去！浏览器你好玩么！让我白折腾三个小时！</p>
+<p>呼终于可以直接打开了。</p>
+<p>嗯？你以为这就结束了？本耗子表示<br><strong>这只是个开始</strong></p>
+<hr>
+<p>emmm可以改主题……发费的耗子怎么能放弃呢？看看这个主题，多么可爱<del>看看这个背景，我多么喜欢</del>啊~就是你了皮卡丘！……啊不对<a href="https://github.com/Shen-Yu/hexo-theme-ayer">ayer</a>!</p>
+<blockquote>
+<p>下载ing&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</p>
+</blockquote>
+<p>emmmm挪到<code>themes</code>文件夹里,照着官方教程乱改一气……<br>打开<code>_config.yml</code>,设置主题为<code>ayer</code></p>
+<p><code>hexo generate</code>!</p>
+<p>欸怎么这么多错误？算了试试直接运行。</p>
+<p><code>hexo server</code></p>
+<p>完了，根本运行不了啊……看看上面有多少错误……</p>
+<blockquote>
+<p>10分钟后</p>
+</blockquote>
+<p>啊完全修不过来啊……删了重新下载吧……</p>
+<p><code>delete</code></p>
+<p>欸……我怎么<code>hexo</code>也没有用了？</p>
+<blockquote>
+<p>自我检查ing&gt;&gt;&gt;&gt;&gt;&gt;&gt;</p>
+</blockquote>
+<p>哦……我好像吧初始文件删了……算了算了再来一遍吧……（此处重复千千遍）</p>
+<p>更改主题，上传……emmm可以显示，那就挨个设置吧……</p>
+<hr>
+<p>好了找到问题了，可能是瞎安装的插件结果插件没能顺利运行的原因……<br>那下面继续来作死吧！o(<em>￣▽￣</em>)ブ</p>
+<hr>
+<h1 id="Part-n"><a href="#Part-n" class="headerlink" title="Part n"></a>Part n</h1><hr>
+<h2 id="网易云音乐"><a href="#网易云音乐" class="headerlink" title="网易云音乐"></a>网易云音乐</h2><p>emmm在设置的过程中发现可以播放歌曲，那就走起！<br>设置尺寸……开启自动播放……输入歌单ID……嗯？怎么不显示？<br>那换个歌单试试。<br>emmmmm还不行……</p>
+<p>百度一下……改个代码？找一找……嗯嗯复制粘贴……<br>咦！可以播放歌单了！换一首歌！</p>
+<p>可换了一首歌为什么就不行了？<br>再换一首？还是不行……</p>
+<p>这时，我忽然想起了一个重要的问题</p>
+<h2 id="版权！！！"><a href="#版权！！！" class="headerlink" title="版权！！！"></a>版权！！！</h2><p>会不会是没有版权呢？</p>
+<p>事实证明，是的，我的歌单中大部分是不允许生成外链的……</p>
+<p>那么！算了还是找一首有版权的歌曲吧……</p>
+<p>好了！音乐可以正常播放了，那我们是不是要搞一个评论系统呢？要得！安排！</p>
+<hr>
+<h2 id="gitalk"><a href="#gitalk" class="headerlink" title="gitalk"></a>gitalk</h2><p>emmm就用<a href="http://github.com/gitalk/gitalk">gitalk</a>吧!</p>
+<p>首先，按照教程安装gitalk，去申请一个密钥……粘贴进去……F5！当当当出来了！</p>
+<p>但为什么显示未连接？难道是因为没有上传的原因？</p>
+<p><code>hexo deploy</code></p>
+<p>还是不行？那只好再去百度了。</p>
+<p>跟着教程溜了溜，再次上传，显示：坏的凭证</p>
+<p>（耗式蒙蔽）？？？？？</p>
+<p>(╯‵□′)╯︵┻━┻lz不搞了！</p>
+<p>好了就是这样……</p>
+<hr>
+<p>另附三篇教程链接：<br><a href="https://www.cnblogs.com/visugar/p/6821777.html">hexo从零开始到搭建完成</a></p>
+<p><a href="https://sspai.com/post/25137">认识与入门Markdown</a></p>
+<p><a href="https://mrcxt.github.io/hexo/%E8%A7%A3%E5%86%B3hexo%E4%B8%8B%E5%88%86%E7%B1%BB%E5%92%8C%E6%A0%87%E7%AD%BE%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA%E7%9A%84%E9%97%AE%E9%A2%98/">完美解决hexo下分类和标签无法显示的问题</a></p>
+<hr>
+<p>鸣谢：@huanling 幻灵哥提供的教程</p>
+]]></content>
+      <tags>
+        <tag>教程</tag>
       </tags>
   </entry>
 </search>
