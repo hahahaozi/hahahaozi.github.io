@@ -921,85 +921,113 @@ bilibili:
       </tags>
   </entry>
   <entry>
-    <title>如何用win10开启和小伙伴们的链接门——Minecraft开服教程</title>
-    <url>/posts/d8b9f220/</url>
-    <content><![CDATA[<h2 id="序"><a href="#序" class="headerlink" title="序"></a>序</h2><p>从入手开始，就想着从前的激情生活……哦哦不是，是和谐生活。在某易还没代理我的世界前……没错！就是我的世界！一切都那么美好……和小伙伴们开着挂玩mc……（忘了那个软件叫什么了……青绿色的底，中间有一个镐子⛏）</p>
-<p>自从一次体会到买服开服的乐趣之后，便开始了一发不可收拾的买服旅程。从国内的买到国外的。同时还体验了一把“搞基”的乐趣所在。[话说搞完机后更想搞了怎么办？]</p>
-<p>从Windows开到Linux，官方提供的安装包都使用过。后来因为各种更新换代原因，最终抛弃了服务器。（其实是没时间玩了）</p>
-<p>直到这回！该死的吃野味的人把病毒带到了人间。受益停课（呜呜呜呜妈妈我考不上大学了）。我的计划又可以开始了！</p>
-<p>制作时间也就20分钟吧……也不是很长。只是中间端口映射麻烦事。跟着教程走其实还是挺简单的。</p>
-<p>下面，来看一下作死过程……</p>
-<p>哦对，本教程是针对手机客户端的，既通过Google下载的Mineccraft。网易版请直接购买网易服务器。</p>
-<p><strong>本教程无图</strong><br>（懒得截图，上传到图床，再把链接转过来了）</p>
-<h2 id="一：关于服务端的下载"><a href="#一：关于服务端的下载" class="headerlink" title="一：关于服务端的下载"></a>一：关于服务端的下载</h2><p>刚打开mc官网的界面，发现。他，<strong>改版了！</strong>。你懂的我的感受么！逛了10分钟没找到自建服务器的安装包。<a href="https://www.minecraft.net/zh-hans/">官方网站|Minecraft</a><br>最后发现support里变成了我看不懂的样子……于是害死猫的耗子心心动了……</p>
-<blockquote>
-<p>大脑：点进去</p>
-<p>手：哦，点进去</p>
-<p>手：喂等等我为什么要点进去！</p>
-<p>大脑：哪那么多废话，叫你点你就点</p>
-</blockquote>
-<p><a href="https://help.minecraft.net/hc/en-us">帮助中心</a></p>
-<p>嗯就是这个网页……什么？看不懂？没事！我也看不懂……大不了你就全点一遍呗……</p>
-<p>当然！如此聪明的耗子是直接网页翻译的……欸别打我！我错了！</p>
-<p>咳咳……往下划到最低下，找到[PLAYING MINECRAFT],下面第三个标题[Dedicated servers for Minecraft on Bedrock]</p>
-<p>点进去会发现这是一篇Q&amp;A，找到[Q: How do I download the dedicated Bedrock server software?]这个标题。找到第一段最后一行的”here”，你会发现这是一个超链接，点进去。</p>
-<h2 id="二：服务器下载链接"><a href="#二：服务器下载链接" class="headerlink" title="二：服务器下载链接"></a>二：服务器下载链接</h2><blockquote>
-<p>传送门：<a href="https://www.minecraft.net/en-us/download/server/bedrock">服务端下载地址</a><br>更新日期：2020/3/12 13:53:17 </p>
-</blockquote>
-<p>根据版本不同可能链接会发生变动。上面已经告诉了你如何找到服务端，不要再找我了哦~</p>
-<p>下面你可以看到Windows和Linux两种系统的下载方式。</p>
-<h2 id="三：系统要求"><a href="#三：系统要求" class="headerlink" title="三：系统要求"></a>三：系统要求</h2><ul>
-<li>Windows系统要求：由于需要支持环境，而那个.dll文件只在win10中存在。所以版本就是win10或win server2016+ 亲测2012版本不可以。</li>
-<li>Linux系统要求：由于需要支持环境，而手残耗子只在Ubuntu19.04 64bit 版本成功开启过，其下行版本Ubuntu 12.04（64bit）、Ubuntu 16.04（64bit）均无法正常开启。如果是我技术太渣的话各位大佬请忽略此系统要求。</li>
-</ul>
-<p>想起来当时还为了这个文件找遍全网，最后在微软的一篇补丁公告中，几百个.dll找到了这个文件，一看相关信息……</p>
-<p><strong>Shit！</strong></p>
+    <title>一起来个4w4</title>
+    <url>/posts/e3c9645c/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>运动会的到来让耗子<font color=blue>@Hahahaozi</font>格外开心！碰巧到了五一假期。看着青岛市内那么多的mission，顿时升起了搞事情的心！（不会搞事情的耗子不是好Agent）遂开始了自己的mission大计。</p>
 <hr>
-<p>下面勾选复选框，点击下载。Windows直接下载大家都会……不会自行搜索。Linux使用命令<code>wget</code>用来下载。</p>
-<p>emmmm手头没有Linux系统所以今天用Windows来讲。以后有了Linux可搞再上传吧。</p>
-<p>解压好后打开文件夹，你可以看到一堆文件。下面用记事本打开<code>server.properties</code>文件，以此来设置我们服务器的一些基本设置。</p>
-<h2 id="四：服务器配置文件（server-properties）"><a href="#四：服务器配置文件（server-properties）" class="headerlink" title="四：服务器配置文件（server.properties）"></a>四：服务器配置文件（server.properties）</h2><p>(代码模式怎么也搞不好了……就不放代码框了)</p>
-<p><code>server-name=</code>这个是你服务器的名字，填上你喜欢的就可以了</p>
-<p><code>gamemode=</code>这个是游戏默认模式，分为冒险、生存和创造</p>
-<p><code>difficulty=</code>游戏难度</p>
-<p><code>allow-cheats=</code>是否允许玩家作弊</p>
-<p><code>max-players=</code>服务器最多允许进入人数，可以限制人员</p>
-<p><code>online-mode=</code>是否开启正版验证。其实这个现在有点鸡肋了。如果你下的盗版链接不上xbox账户根本连不了机。而能联机的肯定是正版账户。</p>
-<p><code>white-list=</code>是否启用白名单。如果启用，则需要同步设置此目录下的<code>whitelist.json</code>文件。同样使用记事本打开。</p>
-<p><code>server-port=</code>ipv4端口。一般不用更改，但要记住这个端口，我们后面要用到。</p>
-<p><code>server-portv6=</code>ipv6端口。现在……好多家庭用户还没有ipv6地址，同样不用更改。</p>
-<p><code>view-distance=</code>最远刷新距离（区块）</p>
-<p>好了剩下的我也不知道什么意思，我也没动……</p>
-<p>现在你就配置完文件了，这时保存退出，打开<code>bedrock_server.exe</code>文件。当你看到显示</p>
-<blockquote>
-<p>Server started.</p>
-</blockquote>
-<p>后，服务器就成功开启了。</p>
-<h2 id="五：主机固定内网设置"><a href="#五：主机固定内网设置" class="headerlink" title="五：主机固定内网设置"></a>五：主机固定内网设置</h2><p>后面我们需要端口穿刺……哦不对是端口映射。需要我们将主机的内网ip固定起来，以便开机就可以链接。</p>
-<p>用浏览器打开<code>192.168.1.1</code>，根据路由器的不同管理界面地址可能不一样，这个查看你的路由器说明书就可以了。登录名和密码一般也贴在路由器底部。</p>
-<p>此处以耗子的路由器讲解，各不同路由器管理界面不一致，大同小异。</p>
-<p>登陆后找到更多设置-网络设置-局域网-静态 IP 地址绑定列表，将你要开服务器的主机绑定一个内网ip，最好先查一遍内网的ip，防止重复。</p>
-<p>要记好固定的ip，接下来要用。</p>
-<h2 id="六：关于内网穿透"><a href="#六：关于内网穿透" class="headerlink" title="六：关于内网穿透"></a>六：关于内网穿透</h2><p>由于我内网穿透没有成功，或者说不会搞。所以我是直接买的服务。</p>
-<p><a href="https://cloud.zhexi.tech/">哲西云</a> 优惠码：<code>JF9JYY</code></p>
-<p>注册登录后会有一个免费的1天适用，你可以先试一试能不能穿透再购买。</p>
-<p>下面来讲如何设置。</p>
-<p>进入续断端口映射，选择客户端列表，安装客户端。</p>
-<p>安装好后你会在列表中看到你的计算机。</p>
-<p>选择端口映射-新建隧道。</p>
-<p>隧道名称随意。<br>客户端选择你刚刚的安装客户端的计算机。<br>映射类型选择UDP，因为mc的端口是用的UDP。<br>内网主机输入你刚刚固定的内网ip。<br>内网端口输入默认的19132，如果你在配置文件里更改了端口，在此处应填入更改后的端口。<br>外网端口无法选择。<br>高级选项中基础协议选择QUIC.</p>
-<p>点击创建。这是你会看到你新配置的线路已经成功运行了。</p>
-<p>在“内网主机与外网访问”这一栏你可以看到你的外网端口，应该是一串英文数字的混合。将冒号前的填入游戏中ip地址，将后面的填入端口号。就可以愉快的游戏了。</p>
-<p>点击后面的诊断，可以看到ipv4，如果嫌上面的麻烦可以将系统默认域名一栏中中间的数字地址填入ip地址中。</p>
-<h2 id="七：总结"><a href="#七：总结" class="headerlink" title="七：总结"></a>七：总结</h2><p>如果进入后发现是个红点不要担心，直接连接就好。虽然我也不知道它为什么检测不出来但他确实是可以连上的。</p>
-<p>好了就是这样！可以和小伙伴愉快的联机咯！</p>
+<h2 id="第一章：规划"><a href="#第一章：规划" class="headerlink" title="第一章：规划"></a>第一章：规划</h2><p>在看iitc时，耗子发出了“吱吱吱”的悲叹。纵观青岛，只有以<font color=green>@LenardZ</font>大佬为首的绿军做的绿盖子在青岛上空高高飘扬。于是我又有了一个大胆的想法：去炸了大佬的po！（实际证明我错了，是我异想天开了。这简直就是个坑啊！）</p>
+<p>在出狱的前几天就一直在找任务，想要最高效率的做完多套任务。又想可以尝试一下夜刷。那么就白天肝任务晚上去偷偷摸摸的炸po吧！（于是又一个坑出现了……）</p>
+<p>经过耗子的浏览和筛选，最终挑选出来了几个兼具美学和运动学的任务。他们分别是</p>
+<ol>
+<li>青岛反抗军纪念任务</li>
+<li>逃离阿尔勒</li>
+<li>在荒野中什么都又可能发生</li>
+<li>May Fourth Square in Qingdao</li>
+<li>我的梦</li>
+<li>雕塑园的梦</li>
+<li>游览老舍公园</li>
+<li>云上青岛</li>
+</ol>
+<p>其中云上青岛准备炸完<font color=green>@LenardZ</font>大佬的po后去夜刷的。</p>
+<p>正好规划好，从青岛站出发，做完反抗军做完老舍公园就顺着海边栈道做逃离阿尔勒，到达五四广场就把荒野、May和我的梦做了。第二天去雕塑园做雕塑园的梦。（理想是丰满的，现实是残酷的）</p>
+<hr>
+<h2 id="第二章：出发"><a href="#第二章：出发" class="headerlink" title="第二章：出发"></a>第二章：出发</h2><h4 id="第一节：青岛抵抗军纪念任务"><a href="#第一节：青岛抵抗军纪念任务" class="headerlink" title="第一节：青岛抵抗军纪念任务"></a>第一节：青岛抵抗军纪念任务</h4><p>耗子放假前晚上还想的第一个蹦跶出学校，努力刷刷刷。然而事实是早晨起来一睁眼，整个宿舍就剩我一个人了……（脸黑，这场景似曾相识）只能一个人苦逼的收拾东西搞卫生。</p>
+<p>在出门前看了眼天气预报，嗯……预报没有雨，但看这天不太明朗的样子，还是带上伞吧！于是耗子终于在11点前出了校门。</p>
+<p>坐隧道1路的人是一点也不少啊，特意等到一个觉得人少的时间（为自己的懒找光明正大的借口），结果还是很多人。最后在公交车的最后一排被众多小姐姐包围了（嘿……嘿嘿嘿……我很正经的说）别问！问就是没有图！</p>
+<p>到了青岛站开始反抗军纪念任务时天空已经开始变阴了，我就掏出了我的大宝剑——双人雨伞准备应对这场预报的中雨。之后证明我低估了青岛的雨。（哭泣……是我来自小城市的不配了）</p>
+<p>在做纪念任务的途中遇到一位老奶奶，看我拿着手机看就问我是不是迷路了，她可以给我指路。第一次碰到主动指路的人。太感动了。实名感谢热心老奶奶！</p>
+<p>雨哗啦啦的下着，我开开心心的做任务。然而雨越下越大，雨点越下越沉，我越来越感觉不对劲。低头一看，下的是冰雹！<a href="https://imgtu.com/i/gZHu3F"><img src="https://z3.ax1x.com/2021/05/02/gZHu3F.md.jpg" alt="gZHu3F.md.jpg"></a>我是雨伞不防冰雹啊！正好到了一个天主教大教堂，<a href="https://imgtu.com/i/gZHlu9"><img src="https://z3.ax1x.com/2021/05/02/gZHlu9.jpg" alt="gZHlu9.jpg"></a>看到一群在屋檐下避雨的人，就像一群麻雀在电线上排成一排。于是我从耗子摇身一变成为麻雀（狗头）。</p>
+<p>待大雨走后我又变成了一只反复横跳的耗子，不畏艰险，努力玩耍！</p>
+<p>在老舍公园看到一群老大爷，打着伞也要下棋。真的，大爷们是真的不畏困难险阻。<a href="https://imgtu.com/i/gZHJN6"><img src="https://z3.ax1x.com/2021/05/02/gZHJN6.jpg" alt="gZHJN6.jpg"></a></p>
+<p>天空打起了雷，闪电把天空分割成一片片的。而我，在伞下瑟瑟发抖……赶紧问问青岛人。<a href="https://imgtu.com/i/gZHage"><img src="https://z3.ax1x.com/2021/05/02/gZHage.png" alt="gZHage.png"></a></p>
+<p>我赶忙从单手举伞变成了耗子绕棍。</p>
+<p>海边风大，把我裤脚和鞋全打湿了😭。此时一看天气预报，大雨啊……<a href="https://imgtu.com/i/gZH64f"><img src="https://z3.ax1x.com/2021/05/02/gZH64f.jpg" alt="gZH64f.jpg"></a></p>
+<p>在穿过一条小巷子时被一个不知是不是xm集散地流出来的水惊呆了，这可能是xm控制大气制造出来的xm造瀑布吧！<a href="https://imgtu.com/i/gZH5bn"><img src="https://z3.ax1x.com/2021/05/02/gZH5bn.md.jpg" alt="gZH5bn.md.jpg"></a></p>
+<p>在经历九曲十八弯后，青岛抵抗军纪念任务成功完成！耗时1小时25分钟（13：59——15：24）</p>
+<h4 id="第二节：逃离阿尔勒"><a href="#第二节：逃离阿尔勒" class="headerlink" title="第二节：逃离阿尔勒"></a>第二节：逃离阿尔勒</h4><p>逃离阿尔勒的第二个任务需要到栈桥上走一遭，而我又害怕变成那只乘风破浪的耗子。所以……</p>
+<p>冲冲冲！没有什么能够阻挡耗子对mission的向往！！！（友情提示：各位Agent出勤一定要保护好自身安全，毕竟po没了还可以拿香蕉诱惑猩猩再来一个，但Agent只有一个叫xxx的。虽然我不确定猩猩会不会为了几把香蕉上个po……但万一猩猩是家养的，而猩猩王看北蓝呢？那岂不是看到就是赚到！）<a href="https://imgtu.com/i/gZHRgg"><img src="https://z3.ax1x.com/2021/05/02/gZHRgg.jpg" alt="gZHRgg.jpg"></a></p>
+<p>耗子心惊胆战的上了栈桥后，握紧伞把，弯腰前进，用伞乘风破浪，做……咳咳算了……我要做成了你们就看不到这篇流水记了……</p>
+<p>总之！耗子安全的到达了栈桥！栈桥上没有几个人，跟我同行的只有一个外卖小哥（后来看见外卖小哥满脸疑惑的拎着外卖原路返回……）。<a href="https://imgtu.com/i/gZH75V"><img src="https://z3.ax1x.com/2021/05/02/gZH75V.jpg" alt="gZH75V.jpg"></a></p>
+<p>耗子成功获得了“无人的栈桥照片*1”</p>
+<p>耗子成功炸掉了绿绿们的7po！（骄傲+傲娇）</p>
+<p>耗子的伞被大风掀过去了！（对不起，就是没坏！欸 就是玩 就是不坏 气死你们！）</p>
+<p>俗话说，风险与机遇并存。什么？没听过？谁说的？咳咳……这都不重要，<del>重要的是有小姐姐！！！！哦哦哦哦哦！！！！！</del>（耗子不是流氓子谢谢（￣︶￣）↗　）</p>
+<p>在栈桥边上看到了嘎嘎乱飞的海鸥（我也不知道为什么用了嘎嘎乱飞……反成……我觉得挺好！），这让我想起了我着魔的同学，每次出校门看动态第一条必是：喂海鸥！ 这可能就是 为鸥疯狂为鸥打call吧。</p>
+<p>还有一群在岛礁上歇息的海鸥群。<a href="https://imgtu.com/i/gZHbCT"><img src="https://z3.ax1x.com/2021/05/02/gZHbCT.md.jpg" alt="gZHbCT.md.jpg"></a></p>
+<hr>
+<p>在做5左右的时候进到了一个叫青岛栈桥广场的地下商城，然而映入眼帘的只有荒废和破败。可能又是一项失败的尝试吧。<a href="https://imgtu.com/i/gZHOv4"><img src="https://z3.ax1x.com/2021/05/02/gZHOv4.md.jpg" alt="gZHOv4.md.jpg"></a></p>
+<p>从青岛栈桥广场出来后，雨过天晴。收起伞，大步向前走！<a href="https://imgtu.com/i/gZHvr9"><img src="https://z3.ax1x.com/2021/05/02/gZHvr9.md.jpg" alt="gZHvr9.md.jpg"></a></p>
+<p>远眺信号山<a href="https://imgtu.com/i/gZbEKH"><img src="https://z3.ax1x.com/2021/05/02/gZbEKH.md.jpg" alt="gZbEKH.md.jpg"></a></p>
+<p>路过海军博物馆的时候看到海军博物馆正在修理，整个博物馆都是暂停接待的状态。</p>
+<p>而后跟随任务来到了鲁迅公园，而旁边就是抖音热门的琴屿路，第一眼特别的惊艳：路的尽头是一片绿林，到达一定角度时右侧豁然开朗，和左侧的密林形成强烈对比，震撼人心。而且道路向阳，海面波光粼粼。过去就是小青岛。<a href="https://imgtu.com/i/gZbVrd"><img src="https://z3.ax1x.com/2021/05/02/gZbVrd.jpg" alt="gZbVrd.jpg"></a><br><a href="https://imgtu.com/i/gZblRS"><img src="https://z3.ax1x.com/2021/05/02/gZblRS.jpg" alt="gZblRS.jpg"></a></p>
+<p>耗子感觉突然醒悟了！</p>
+<p>最浪漫的不是走过的路，而是陪你走过的人。</p>
+<p>而耗子看着自己的左右手留下了感动的泪水……感谢我的左右手这么多年没有抛弃我！以后有机会一定要把你俩贡起来！不过，机遇么，不可多得，有的人一辈子也没有机遇。</p>
+<p>到达小青岛的时候已经4：30了，而小青岛5点关门。于是原路返回，继续mission</p>
+<p>ps：小青岛成人票5元，学生凭证2.5</p>
+<p>在鲁迅公园差点没给我滑劈叉……里面的地砖是石砖和瓷砖混拼的……下过雨后瓷砖滑的不行。一个不注意就踩瓷砖上了。</p>
+<hr>
+<p>这是一个问题贴：为什么没有景深啊啊啊……哭了啊……<a href="https://imgtu.com/i/gZb8MQ"><img src="https://z3.ax1x.com/2021/05/02/gZb8MQ.jpg" alt="gZb8MQ.jpg"></a></p>
+<hr>
+<p><a href="https://imgtu.com/i/gZbUI0"><img src="https://z3.ax1x.com/2021/05/02/gZbUI0.jpg" alt="gZbUI0.jpg"></a><br>到此，我已经走到了小鱼山，现在是下午17：08 从15：30开始，已经过去了一个半小时，才走过了逃离阿尔勒的1/5……现在的我要吐槽一句，这不是逃离阿尔勒，这是劝退ingress啊……</p>
+<p>第一海水浴场的午日<a href="https://imgtu.com/i/gZbBzF"><img src="https://z3.ax1x.com/2021/05/02/gZbBzF.jpg" alt="gZbBzF.jpg"></a></p>
+<p>在经过2小时的徒步，终于到达了八大关，<a href="https://imgtu.com/i/gZbrM4"><img src="https://z3.ax1x.com/2021/05/02/gZbrM4.jpg" alt="gZbrM4.jpg"></a>也看到了乌云遮日的景象。在花石楼上看到了去年的海堤，但怎么也看不见去年堤坝上的人。<a href="https://imgtu.com/i/gZbyL9"><img src="https://z3.ax1x.com/2021/05/02/gZbyL9.jpg" alt="gZbyL9.jpg"></a>每当我想到这，我忍不住的眼泪……</p>
+<p>充满了我的嘴巴……跟室友抢吃的才好吃！</p>
+<p>过了八大关，算是走过了这个任务的1/2，还剩1/2等着我去征服！<a href="https://imgtu.com/i/gZbcZR"><img src="https://z3.ax1x.com/2021/05/02/gZbcZR.jpg" alt="gZbcZR.jpg"></a></p>
+<p>冲冲冲！</p>
+<p>在八大关，就看到了彩虹……这就证明！我的左右手兄弟是不会抛弃我的！<a href="https://imgtu.com/i/gZb2Ix"><img src="https://z3.ax1x.com/2021/05/02/gZb2Ix.jpg" alt="gZb2Ix.jpg"></a></p>
+<p>听说八大关有好多不属于民的院子，今天总算见到了……就是见到了一台考斯特而已……</p>
+<p>路过好基友的时候还给好基友插满了高脚！<a href="https://imgtu.com/i/gZqwTI"><img src="https://z3.ax1x.com/2021/05/02/gZqwTI.md.jpg" alt="gZqwTI.md.jpg"></a></p>
+<p>在耗子也不知道哪个点的助力下，耗子的upv牌子到了2k！拿到了upv金牌👏！<a href="https://imgtu.com/i/gZqrff"><img src="https://z3.ax1x.com/2021/05/02/gZqrff.md.jpg" alt="gZqrff.md.jpg"></a></p>
+<p>晚上不知道吃什么，索性去便利店买了俩面包垫吧垫吧，继续冲！    </p>
+<p>在19：41，耗子到达了奥帆中心，<a href="https://imgtu.com/i/gZqW0s"><img src="https://z3.ax1x.com/2021/05/02/gZqW0s.md.jpg" alt="gZqW0s.md.jpg"></a>然后又看见了那辆考斯特和同一拨人……然而任务的一个po——“奥帆中心-左麒麟”在大门口那边……没办法！耗子只能硬着头皮往里蹭……在蹭到后赶紧拐弯……再往里面走那个po只能“望po兴叹”。<a href="https://imgtu.com/i/gZqgXQ"><img src="https://z3.ax1x.com/2021/05/02/gZqgXQ.md.jpg" alt="gZqgXQ.md.jpg"></a></p>
+<p>最后在20：19分，耗子到达了情人坝的灯塔下，<a href="https://imgtu.com/i/gZqRmj"><img src="https://z3.ax1x.com/2021/05/02/gZqRmj.jpg" alt="gZqRmj.jpg"></a>完成了劝退ingress……啊不是 逃离阿尔勒这个任务。总历时约5小时（15：30-20：20）……</p>
+<p>之后思考了一下，这么晚有点超出计划了，八个任务做不然，那再做两个应该可以吧！</p>
+<h4 id="第三节：在荒野中什么都可能发生"><a href="#第三节：在荒野中什么都可能发生" class="headerlink" title="第三节：在荒野中什么都可能发生"></a>第三节：在荒野中什么都可能发生</h4><p>补上两张情人坝的照片吧。<a href="https://imgtu.com/i/gZq5t0"><img src="https://z3.ax1x.com/2021/05/02/gZq5t0.jpg" alt="gZq5t0.jpg"></a><br><a href="https://imgtu.com/i/gZqIhV"><img src="https://z3.ax1x.com/2021/05/02/gZqIhV.jpg" alt="gZqIhV.jpg"></a></p>
+<p>之后返回五四广场荒野就没有照片了……满脑子只有：做完回宾馆……做完回宾馆……外卖份关东煮……外卖份关东煮……</p>
+<p>因为历史原因，这套mission每个路径点只有1-2个，看着是好做，但直接结果就是我背着包在下面不停的折返……还赶走了一对温馨的小情侣……呜呜呜对不起啊……这不能怪我……要怪……就怪<font color=green>ChenBW</font>吧……（求大佬不要diss我！谢谢！么么哒~）</p>
+<p>不过这套任务完成的很容易，不到15分钟就完成了。还是值得推荐的！</p>
+<h4 id="第四节：其他"><a href="#第四节：其他" class="headerlink" title="第四节：其他"></a>第四节：其他</h4><p>实在是做不动了……一做就不知道几点了……遂放弃……下次再战！<br><a href="https://imgtu.com/i/gZqbX4"><img src="https://z3.ax1x.com/2021/05/02/gZqbX4.jpg" alt="gZqbX4.jpg"></a><br><a href="https://imgtu.com/i/gZqHcF"><img src="https://z3.ax1x.com/2021/05/02/gZqHcF.jpg" alt="gZqHcF.jpg"></a></p>
+<hr>
+<h2 id="第三章：结束"><a href="#第三章：结束" class="headerlink" title="第三章：结束"></a>第三章：结束</h2><p>回到旅馆，耗子舒舒服服的躺下了，拿起了手机，看了看今天的步数：</p>
+<p>嗯，是个不错的成绩，霸占榜一，那就奖励自己个外卖吧！</p>
+<p>于是耗子打开了饿了么，<strong>痛快</strong>的付了个关东煮尾款。</p>
+<p>–半个小时后–</p>
+<p>我的外卖送到了上回的宾馆！我没改定位！</p>
+<p>北风吹……战鼓擂……耗子半夜拿外卖……</p>
+<p>幸好！上回住的旅馆和这次住的在一条街上，相距不到500m（这真的是个凑巧……），但它是个上坡路……于是耗子遢邋着旅店的拖鞋去拿了外卖……上次旅店的前台小姐姐和保安大爷都疑惑得看着背着包，穿着拖鞋从外面进来要外卖的我……太丢人了……</p>
+<p>在回去的路上还拿了两个upv！</p>
+<hr>
+<h2 id="第四章：重生"><a href="#第四章：重生" class="headerlink" title="第四章：重生"></a>第四章：重生</h2><p>第二天起床发现自己腰也不酸，腿也不疼，走了4w4浑身充满了力量，感觉还能再来个4w4！</p>
+<p>那下回咱们一起4w4吧！</p>
+<hr>
+<h2 id="第五章：结语"><a href="#第五章：结语" class="headerlink" title="第五章：结语"></a>第五章：结语</h2><p>活动总结：</p>
+<ol>
+<li>逃离阿尔勒真的建议去做做，特别能领悟大青岛的海景。</li>
+<li>下回再战剩下的……好像May Fourth Square in Qingdao和我的梦会发生冲突……下回试试能不能一起做……</li>
+<li>青岛北站的信号是真的差……真的绝了……电信联通都是5G的标识3G的速度……</li>
+</ol>
+<p>哦对……炸po和夜刷我也没干。床他不香么！</p>
+<hr>
+<h2 id="第六章：课后作业"><a href="#第六章：课后作业" class="headerlink" title="第六章：课后作业"></a>第六章：课后作业</h2><ol>
+<li>文中出现了几次“耗子”？</li>
+<li>最后耗子的手有没有贡起来？</li>
+<li>请迅速回答，耗子本来想做几个任务？</li>
+</ol>
 ]]></content>
-      <categories>
-        <category>Minecraft</category>
-      </categories>
       <tags>
-        <tag>教程</tag>
-        <tag>Minecraft</tag>
+        <tag>游记</tag>
+        <tag>战报</tag>
       </tags>
   </entry>
   <entry>
@@ -1123,6 +1151,93 @@ bilibili:
 ]]></content>
       <tags>
         <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于MarkDown语法的一些笔记</title>
+    <url>/posts/494fda9b/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>如何用win10开启和小伙伴们的链接门——Minecraft开服教程</title>
+    <url>/posts/d8b9f220/</url>
+    <content><![CDATA[<h2 id="序"><a href="#序" class="headerlink" title="序"></a>序</h2><p>从入手开始，就想着从前的激情生活……哦哦不是，是和谐生活。在某易还没代理我的世界前……没错！就是我的世界！一切都那么美好……和小伙伴们开着挂玩mc……（忘了那个软件叫什么了……青绿色的底，中间有一个镐子⛏）</p>
+<p>自从一次体会到买服开服的乐趣之后，便开始了一发不可收拾的买服旅程。从国内的买到国外的。同时还体验了一把“搞基”的乐趣所在。[话说搞完机后更想搞了怎么办？]</p>
+<p>从Windows开到Linux，官方提供的安装包都使用过。后来因为各种更新换代原因，最终抛弃了服务器。（其实是没时间玩了）</p>
+<p>直到这回！该死的吃野味的人把病毒带到了人间。受益停课（呜呜呜呜妈妈我考不上大学了）。我的计划又可以开始了！</p>
+<p>制作时间也就20分钟吧……也不是很长。只是中间端口映射麻烦事。跟着教程走其实还是挺简单的。</p>
+<p>下面，来看一下作死过程……</p>
+<p>哦对，本教程是针对手机客户端的，既通过Google下载的Mineccraft。网易版请直接购买网易服务器。</p>
+<p><strong>本教程无图</strong><br>（懒得截图，上传到图床，再把链接转过来了）</p>
+<h2 id="一：关于服务端的下载"><a href="#一：关于服务端的下载" class="headerlink" title="一：关于服务端的下载"></a>一：关于服务端的下载</h2><p>刚打开mc官网的界面，发现。他，<strong>改版了！</strong>。你懂的我的感受么！逛了10分钟没找到自建服务器的安装包。<a href="https://www.minecraft.net/zh-hans/">官方网站|Minecraft</a><br>最后发现support里变成了我看不懂的样子……于是害死猫的耗子心心动了……</p>
+<blockquote>
+<p>大脑：点进去</p>
+<p>手：哦，点进去</p>
+<p>手：喂等等我为什么要点进去！</p>
+<p>大脑：哪那么多废话，叫你点你就点</p>
+</blockquote>
+<p><a href="https://help.minecraft.net/hc/en-us">帮助中心</a></p>
+<p>嗯就是这个网页……什么？看不懂？没事！我也看不懂……大不了你就全点一遍呗……</p>
+<p>当然！如此聪明的耗子是直接网页翻译的……欸别打我！我错了！</p>
+<p>咳咳……往下划到最低下，找到[PLAYING MINECRAFT],下面第三个标题[Dedicated servers for Minecraft on Bedrock]</p>
+<p>点进去会发现这是一篇Q&amp;A，找到[Q: How do I download the dedicated Bedrock server software?]这个标题。找到第一段最后一行的”here”，你会发现这是一个超链接，点进去。</p>
+<h2 id="二：服务器下载链接"><a href="#二：服务器下载链接" class="headerlink" title="二：服务器下载链接"></a>二：服务器下载链接</h2><blockquote>
+<p>传送门：<a href="https://www.minecraft.net/en-us/download/server/bedrock">服务端下载地址</a><br>更新日期：2020/3/12 13:53:17 </p>
+</blockquote>
+<p>根据版本不同可能链接会发生变动。上面已经告诉了你如何找到服务端，不要再找我了哦~</p>
+<p>下面你可以看到Windows和Linux两种系统的下载方式。</p>
+<h2 id="三：系统要求"><a href="#三：系统要求" class="headerlink" title="三：系统要求"></a>三：系统要求</h2><ul>
+<li>Windows系统要求：由于需要支持环境，而那个.dll文件只在win10中存在。所以版本就是win10或win server2016+ 亲测2012版本不可以。</li>
+<li>Linux系统要求：由于需要支持环境，而手残耗子只在Ubuntu19.04 64bit 版本成功开启过，其下行版本Ubuntu 12.04（64bit）、Ubuntu 16.04（64bit）均无法正常开启。如果是我技术太渣的话各位大佬请忽略此系统要求。</li>
+</ul>
+<p>想起来当时还为了这个文件找遍全网，最后在微软的一篇补丁公告中，几百个.dll找到了这个文件，一看相关信息……</p>
+<p><strong>Shit！</strong></p>
+<hr>
+<p>下面勾选复选框，点击下载。Windows直接下载大家都会……不会自行搜索。Linux使用命令<code>wget</code>用来下载。</p>
+<p>emmmm手头没有Linux系统所以今天用Windows来讲。以后有了Linux可搞再上传吧。</p>
+<p>解压好后打开文件夹，你可以看到一堆文件。下面用记事本打开<code>server.properties</code>文件，以此来设置我们服务器的一些基本设置。</p>
+<h2 id="四：服务器配置文件（server-properties）"><a href="#四：服务器配置文件（server-properties）" class="headerlink" title="四：服务器配置文件（server.properties）"></a>四：服务器配置文件（server.properties）</h2><p>(代码模式怎么也搞不好了……就不放代码框了)</p>
+<p><code>server-name=</code>这个是你服务器的名字，填上你喜欢的就可以了</p>
+<p><code>gamemode=</code>这个是游戏默认模式，分为冒险、生存和创造</p>
+<p><code>difficulty=</code>游戏难度</p>
+<p><code>allow-cheats=</code>是否允许玩家作弊</p>
+<p><code>max-players=</code>服务器最多允许进入人数，可以限制人员</p>
+<p><code>online-mode=</code>是否开启正版验证。其实这个现在有点鸡肋了。如果你下的盗版链接不上xbox账户根本连不了机。而能联机的肯定是正版账户。</p>
+<p><code>white-list=</code>是否启用白名单。如果启用，则需要同步设置此目录下的<code>whitelist.json</code>文件。同样使用记事本打开。</p>
+<p><code>server-port=</code>ipv4端口。一般不用更改，但要记住这个端口，我们后面要用到。</p>
+<p><code>server-portv6=</code>ipv6端口。现在……好多家庭用户还没有ipv6地址，同样不用更改。</p>
+<p><code>view-distance=</code>最远刷新距离（区块）</p>
+<p>好了剩下的我也不知道什么意思，我也没动……</p>
+<p>现在你就配置完文件了，这时保存退出，打开<code>bedrock_server.exe</code>文件。当你看到显示</p>
+<blockquote>
+<p>Server started.</p>
+</blockquote>
+<p>后，服务器就成功开启了。</p>
+<h2 id="五：主机固定内网设置"><a href="#五：主机固定内网设置" class="headerlink" title="五：主机固定内网设置"></a>五：主机固定内网设置</h2><p>后面我们需要端口穿刺……哦不对是端口映射。需要我们将主机的内网ip固定起来，以便开机就可以链接。</p>
+<p>用浏览器打开<code>192.168.1.1</code>，根据路由器的不同管理界面地址可能不一样，这个查看你的路由器说明书就可以了。登录名和密码一般也贴在路由器底部。</p>
+<p>此处以耗子的路由器讲解，各不同路由器管理界面不一致，大同小异。</p>
+<p>登陆后找到更多设置-网络设置-局域网-静态 IP 地址绑定列表，将你要开服务器的主机绑定一个内网ip，最好先查一遍内网的ip，防止重复。</p>
+<p>要记好固定的ip，接下来要用。</p>
+<h2 id="六：关于内网穿透"><a href="#六：关于内网穿透" class="headerlink" title="六：关于内网穿透"></a>六：关于内网穿透</h2><p>由于我内网穿透没有成功，或者说不会搞。所以我是直接买的服务。</p>
+<p><a href="https://cloud.zhexi.tech/">哲西云</a> 优惠码：<code>JF9JYY</code></p>
+<p>注册登录后会有一个免费的1天适用，你可以先试一试能不能穿透再购买。</p>
+<p>下面来讲如何设置。</p>
+<p>进入续断端口映射，选择客户端列表，安装客户端。</p>
+<p>安装好后你会在列表中看到你的计算机。</p>
+<p>选择端口映射-新建隧道。</p>
+<p>隧道名称随意。<br>客户端选择你刚刚的安装客户端的计算机。<br>映射类型选择UDP，因为mc的端口是用的UDP。<br>内网主机输入你刚刚固定的内网ip。<br>内网端口输入默认的19132，如果你在配置文件里更改了端口，在此处应填入更改后的端口。<br>外网端口无法选择。<br>高级选项中基础协议选择QUIC.</p>
+<p>点击创建。这是你会看到你新配置的线路已经成功运行了。</p>
+<p>在“内网主机与外网访问”这一栏你可以看到你的外网端口，应该是一串英文数字的混合。将冒号前的填入游戏中ip地址，将后面的填入端口号。就可以愉快的游戏了。</p>
+<p>点击后面的诊断，可以看到ipv4，如果嫌上面的麻烦可以将系统默认域名一栏中中间的数字地址填入ip地址中。</p>
+<h2 id="七：总结"><a href="#七：总结" class="headerlink" title="七：总结"></a>七：总结</h2><p>如果进入后发现是个红点不要担心，直接连接就好。虽然我也不知道它为什么检测不出来但他确实是可以连上的。</p>
+<p>好了就是这样！可以和小伙伴愉快的联机咯！</p>
+]]></content>
+      <categories>
+        <category>Minecraft</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
+        <tag>Minecraft</tag>
       </tags>
   </entry>
 </search>
